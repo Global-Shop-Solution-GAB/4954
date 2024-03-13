@@ -1,0 +1,2459 @@
+Program.Sub.ScreenSU.Start
+Gui.frmMaint..Create
+Gui.frmMaint..Caption("Addess List")
+Gui.frmMaint..Size(14955,13620)
+Gui.frmMaint..MinX(0)
+Gui.frmMaint..MinY(0)
+Gui.frmMaint..Position(0,0)
+Gui.frmMaint..BackColor(-2147483633)
+Gui.frmMaint..MousePointer(0)
+Gui.frmMaint..Event(UnLoad,frmMaint_UnLoad)
+Gui.frmMaint.GsGridMaint.Create(GsGridControl)
+Gui.frmMaint.GsGridMaint.Size(13620,9645)
+Gui.frmMaint.GsGridMaint.Position(150,495)
+Gui.frmMaint.GsGridMaint.Event(RowCellClick,GsGridMaint_RowCellClick)
+Gui.frmMaint.GsGridMaint.Event(CellValueChanged,GsGridMaint_CellValueChanged)
+Gui.frmMaint.cmdsave.Create(Button)
+Gui.frmMaint.cmdsave.Size(855,375)
+Gui.frmMaint.cmdsave.Position(165,10230)
+Gui.frmMaint.cmdsave.Caption("Save")
+Gui.frmMaint.cmdsave.Event(Click,cmdsave_Click)
+Gui.frmMaint.cmdsave.Enabled(False)
+Gui.frmMaint.cmdsave.Visible(False)
+Gui.frmMaint.txtCust.Create(TextBox,"",True,1320,300,0,1125,120,True,0,"Arial",8,-2147483643,1)
+Gui.frmMaint.txtCust.Locked(True)
+Gui.frmMaint.lbl1.Create(Label,"Customer :",True,945,255,0,165,180,True,0,"Arial",8,-2147483633,0)
+Gui.frmMaint.cmdCustBrow.Create(Button)
+Gui.frmMaint.cmdCustBrow.Size(495,315)
+Gui.frmMaint.cmdCustBrow.Position(2505,105)
+Gui.frmMaint.cmdCustBrow.Caption("^")
+Gui.frmMaint.cmdCustBrow.Event(Click,cmdCustBrow_Click)
+Gui.frmMaint.pic1.Create(PictureBox)
+Gui.frmMaint.pic1.Size(9240,4635)
+Gui.frmMaint.pic1.Position(2910,10425)
+Gui.frmMaint.pic1.Visible(False)
+Gui.frmTestReport..Create
+Gui.frmTestReport..Caption("BackFlow Preventer Report")
+Gui.frmTestReport..Size(15360,14460)
+Gui.frmTestReport..MinX(0)
+Gui.frmTestReport..MinY(0)
+Gui.frmTestReport..Position(0,0)
+Gui.frmTestReport..BackColor(-2147483633)
+Gui.frmTestReport..MousePointer(0)
+Gui.frmTestReport..Event(UnLoad,frmMaint_UnLoad)
+Gui.frmTestReport..MaxButton(False)
+Gui.frmTestReport..Sizeable(False)
+Gui.frmTestReport.section1.Create(Frame)
+Gui.frmTestReport.section1.Size(14565,4485)
+Gui.frmTestReport.section1.Position(255,0)
+Gui.frmTestReport.chkExisting.Create(CheckBox)
+Gui.frmTestReport.chkExisting.Size(1110,360)
+Gui.frmTestReport.chkExisting.Position(10425,165)
+Gui.frmTestReport.chkExisting.Parent("section1")
+Gui.frmTestReport.chkExisting.Caption("EXISTING")
+Gui.frmTestReport.chkNew.Create(CheckBox)
+Gui.frmTestReport.chkNew.Size(885,360)
+Gui.frmTestReport.chkNew.Position(10440,480)
+Gui.frmTestReport.chkNew.Parent("section1")
+Gui.frmTestReport.chkNew.Caption("NEW")
+Gui.frmTestReport.chkReplaced.Create(CheckBox)
+Gui.frmTestReport.chkReplaced.Size(1305,360)
+Gui.frmTestReport.chkReplaced.Position(11565,510)
+Gui.frmTestReport.chkReplaced.Parent("section1")
+Gui.frmTestReport.chkReplaced.Caption("REPLACED")
+Gui.frmTestReport.chkRemoved.Create(CheckBox)
+Gui.frmTestReport.chkRemoved.Size(1560,360)
+Gui.frmTestReport.chkRemoved.Position(11550,180)
+Gui.frmTestReport.chkRemoved.Parent("section1")
+Gui.frmTestReport.chkRemoved.Caption("REMOVED")
+Gui.frmTestReport.lbl1.Create(Label,"PROPERTY NAME",True,1635,255,0,195,390,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl1.Parent("section1")
+Gui.frmTestReport.lbl1.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl2.Create(Label,"PHONE",True,795,255,0,6465,390,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl2.Parent("section1")
+Gui.frmTestReport.lbl2.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl3.Create(Label,"MAILING ADDRESS",True,1680,255,0,195,1110,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl3.Parent("section1")
+Gui.frmTestReport.lbl3.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl4.Create(Label,"CITY",True,1320,255,0,195,1470,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl4.Parent("section1")
+Gui.frmTestReport.lbl4.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl7.Create(Label,"PREVENTER ADDRESS",True,1560,375,0,195,1845,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl7.Parent("section1")
+Gui.frmTestReport.lbl7.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl8.Create(Label,"WATER SUPPLIER",True,1710,255,0,195,2310,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl8.Parent("section1")
+Gui.frmTestReport.lbl8.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl10.Create(Label,"LOCATION",True,1320,255,0,195,2760,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl10.Parent("section1")
+Gui.frmTestReport.lbl10.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl9.Create(Label,"SERIAL #",True,945,255,0,6465,2310,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl9.Parent("section1")
+Gui.frmTestReport.lbl9.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl5.Create(Label,"STATE",True,780,255,0,6465,1455,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl5.Parent("section1")
+Gui.frmTestReport.lbl5.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl6.Create(Label,"ZIP",True,435,255,0,10515,1455,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl6.Parent("section1")
+Gui.frmTestReport.lbl6.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl11.Create(Label,"MAKE",True,1320,255,0,195,3210,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl11.Parent("section1")
+Gui.frmTestReport.lbl11.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl12.Create(Label,"MODEL",True,885,255,0,6465,3195,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl12.Parent("section1")
+Gui.frmTestReport.lbl12.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl13.Create(Label,"SIZE",True,480,255,0,10485,3195,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl13.Parent("section1")
+Gui.frmTestReport.lbl13.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl14.Create(Label,"TYPE",True,1320,255,0,195,3615,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl14.Parent("section1")
+Gui.frmTestReport.lbl14.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.chkRP.Create(CheckBox)
+Gui.frmTestReport.chkRP.Size(855,360)
+Gui.frmTestReport.chkRP.Position(2100,3540)
+Gui.frmTestReport.chkRP.Parent("section1")
+Gui.frmTestReport.chkRP.Caption("RPBA")
+Gui.frmTestReport.chkAVB.Create(CheckBox)
+Gui.frmTestReport.chkAVB.Size(810,360)
+Gui.frmTestReport.chkAVB.Position(10065,3540)
+Gui.frmTestReport.chkAVB.Parent("section1")
+Gui.frmTestReport.chkAVB.Caption("AVB")
+Gui.frmTestReport.chkRPDA2.Create(CheckBox)
+Gui.frmTestReport.chkRPDA2.Size(975,360)
+Gui.frmTestReport.chkRPDA2.Position(3870,3540)
+Gui.frmTestReport.chkRPDA2.Parent("section1")
+Gui.frmTestReport.chkRPDA2.Caption("RPDA-II")
+Gui.frmTestReport.chkDC.Create(CheckBox)
+Gui.frmTestReport.chkDC.Size(870,360)
+Gui.frmTestReport.chkDC.Position(4875,3540)
+Gui.frmTestReport.chkDC.Parent("section1")
+Gui.frmTestReport.chkDC.Caption("DCVA")
+Gui.frmTestReport.chkFiresystem.Create(CheckBox)
+Gui.frmTestReport.chkFiresystem.Size(1845,360)
+Gui.frmTestReport.chkFiresystem.Position(7455,3990)
+Gui.frmTestReport.chkFiresystem.Parent("section1")
+Gui.frmTestReport.chkFiresystem.Caption("FIRE SYSTEM")
+Gui.frmTestReport.chkDCDA.Create(CheckBox)
+Gui.frmTestReport.chkDCDA.Size(915,360)
+Gui.frmTestReport.chkDCDA.Position(5790,3540)
+Gui.frmTestReport.chkDCDA.Parent("section1")
+Gui.frmTestReport.chkDCDA.Caption("DCDA")
+Gui.frmTestReport.chkBoiler.Create(CheckBox)
+Gui.frmTestReport.chkBoiler.Size(1125,360)
+Gui.frmTestReport.chkBoiler.Position(9375,3990)
+Gui.frmTestReport.chkBoiler.Parent("section1")
+Gui.frmTestReport.chkBoiler.Caption("BOILER")
+Gui.frmTestReport.lblPropertyName.Create(Label,"Label",True,3555,255,0,2100,375,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertyName.Parent("section1")
+Gui.frmTestReport.lblPropertyName.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPropertyPh.Create(Label,"Label",True,1935,255,0,7335,375,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertyPh.Parent("section1")
+Gui.frmTestReport.lblPropertyPh.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPropertyadd1.Create(Label,"Label",True,9330,255,0,2100,1095,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertyadd1.Parent("section1")
+Gui.frmTestReport.lblPropertyadd1.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPropertycity.Create(Label,"Label",True,1935,255,0,2100,1455,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertycity.Parent("section1")
+Gui.frmTestReport.lblPropertycity.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPropertyState.Create(Label,"Label",True,1935,255,0,7335,1455,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertyState.Parent("section1")
+Gui.frmTestReport.lblPropertyState.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPropertyZip.Create(Label,"Label",True,1935,255,0,11040,1455,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPropertyZip.Parent("section1")
+Gui.frmTestReport.lblPropertyZip.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblPreventeradd.Create(Label,"Label",True,10875,255,0,2100,1860,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblPreventeradd.Parent("section1")
+Gui.frmTestReport.lblPreventeradd.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblwatersupplier.Create(Label,"Label",True,1935,255,0,2100,2325,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblwatersupplier.Parent("section1")
+Gui.frmTestReport.lblwatersupplier.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblserial.Create(Label,"Label",True,1935,255,0,7335,2325,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblserial.Parent("section1")
+Gui.frmTestReport.lblserial.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lbllocation.Create(Label,"Label",True,1935,255,0,2100,2745,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbllocation.Parent("section1")
+Gui.frmTestReport.lbllocation.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblmake.Create(Label,"Label",True,1935,255,0,2100,3195,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblmake.Parent("section1")
+Gui.frmTestReport.lblmake.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblmodel.Create(Label,"Label",True,1935,255,0,7335,3195,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblmodel.Parent("section1")
+Gui.frmTestReport.lblmodel.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.lblsize.Create(Label,"Label",True,1935,255,0,11040,3195,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblsize.Parent("section1")
+Gui.frmTestReport.lblsize.FontStyle(False,False,True,False,False)
+Gui.frmTestReport.chkRPDA.Create(CheckBox)
+Gui.frmTestReport.chkRPDA.Size(825,360)
+Gui.frmTestReport.chkRPDA.Position(2985,3540)
+Gui.frmTestReport.chkRPDA.Parent("section1")
+Gui.frmTestReport.chkRPDA.Caption("RPDA")
+Gui.frmTestReport.chkPremiseIso.Create(CheckBox)
+Gui.frmTestReport.chkPremiseIso.Size(2610,360)
+Gui.frmTestReport.chkPremiseIso.Position(2970,3990)
+Gui.frmTestReport.chkPremiseIso.Parent("section1")
+Gui.frmTestReport.chkPremiseIso.Caption("PREMISES ISOLATION")
+Gui.frmTestReport.chkIrrigation.Create(CheckBox)
+Gui.frmTestReport.chkIrrigation.Size(1620,360)
+Gui.frmTestReport.chkIrrigation.Position(5790,3990)
+Gui.frmTestReport.chkIrrigation.Parent("section1")
+Gui.frmTestReport.chkIrrigation.Caption("IRRIGATION")
+Gui.frmTestReport.chkSVB.Create(CheckBox)
+Gui.frmTestReport.chkSVB.Size(810,360)
+Gui.frmTestReport.chkSVB.Position(9000,3540)
+Gui.frmTestReport.chkSVB.Parent("section1")
+Gui.frmTestReport.chkSVB.Caption("SVB")
+Gui.frmTestReport.chkPVP.Create(CheckBox)
+Gui.frmTestReport.chkPVP.Size(810,360)
+Gui.frmTestReport.chkPVP.Position(8085,3540)
+Gui.frmTestReport.chkPVP.Parent("section1")
+Gui.frmTestReport.chkPVP.Caption("PVB")
+Gui.frmTestReport.chkDCDA2.Create(CheckBox)
+Gui.frmTestReport.chkDCDA2.Size(1020,360)
+Gui.frmTestReport.chkDCDA2.Position(6735,3540)
+Gui.frmTestReport.chkDCDA2.Parent("section1")
+Gui.frmTestReport.chkDCDA2.Caption("DCDA-II")
+Gui.frmTestReport.chkAG.Create(CheckBox)
+Gui.frmTestReport.chkAG.Size(960,360)
+Gui.frmTestReport.chkAG.Position(11295,3540)
+Gui.frmTestReport.chkAG.Parent("section1")
+Gui.frmTestReport.chkAG.Caption("AG")
+Gui.frmTestReport.chkOther.Create(CheckBox)
+Gui.frmTestReport.chkOther.Size(1125,360)
+Gui.frmTestReport.chkOther.Position(10695,3990)
+Gui.frmTestReport.chkOther.Parent("section1")
+Gui.frmTestReport.chkOther.Caption("OTHER")
+Gui.frmTestReport.txtother.Create(TextBox,"",True,2340,300,0,11880,4005,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtother.Parent("section1")
+Gui.frmTestReport.cmdTestReportsave.Create(Button)
+Gui.frmTestReport.cmdTestReportsave.Size(1170,375)
+Gui.frmTestReport.cmdTestReportsave.Position(13320,165)
+Gui.frmTestReport.cmdTestReportsave.Parent("section1")
+Gui.frmTestReport.cmdTestReportsave.Caption("SAVE")
+Gui.frmTestReport.cmdTestReportsave.Event(Click,cmdTestReportsave_Click)
+Gui.frmTestReport.lbl44.Create(Label,"CONTACT NAME",True,1635,255,0,195,735,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl44.Parent("section1")
+Gui.frmTestReport.lbl44.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lblcontactname.Create(Label,"Label",True,3555,255,0,2100,720,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblcontactname.Parent("section1")
+Gui.frmTestReport.lblcontactphone.Create(Label,"Label",True,1950,255,0,7335,720,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblcontactphone.Parent("section1")
+Gui.frmTestReport.lbl57.Create(Label,"PHONE",True,825,255,0,6465,735,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl57.Parent("section1")
+Gui.frmTestReport.lbl57.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.cmdTestReportPrint.Create(Button)
+Gui.frmTestReport.cmdTestReportPrint.Size(1155,375)
+Gui.frmTestReport.cmdTestReportPrint.Position(13320,645)
+Gui.frmTestReport.cmdTestReportPrint.Parent("section1")
+Gui.frmTestReport.cmdTestReportPrint.Caption("PRINT")
+Gui.frmTestReport.cmdTestReportPrint.Event(Click,cmdTestReportPrint_Click)
+Gui.frmTestReport.lbl15.Create(Label,"HAZARD PROTECTED",True,1845,255,0,210,4095,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl15.Parent("section1")
+Gui.frmTestReport.cmdScreenshot.Create(Button)
+Gui.frmTestReport.cmdScreenshot.Size(1605,375)
+Gui.frmTestReport.cmdScreenshot.Position(12885,1110)
+Gui.frmTestReport.cmdScreenshot.Parent("section1")
+Gui.frmTestReport.cmdScreenshot.Caption("View Screenshot")
+Gui.frmTestReport.cmdScreenshot.Event(Click,cmdScreenshot_Click)
+Gui.frmTestReport.section2.Create(Frame)
+Gui.frmTestReport.section2.Size(14520,3510)
+Gui.frmTestReport.section2.Position(240,4320)
+Gui.frmTestReport.lbl17.Create(Label,"INITIAL TEST RESULTS",True,1095,1080,0,135,1275,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl17.Parent("section2")
+Gui.frmTestReport.lbl17.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.Section2-1.Create(Frame)
+Gui.frmTestReport.Section2-1.Size(6435,3225)
+Gui.frmTestReport.Section2-1.Position(1275,180)
+Gui.frmTestReport.Section2-1.Parent("section2")
+Gui.frmTestReport.lbl18.Create(Label,"REDUCED PRESSURE ASSEMBLY",True,3855,255,0,1785,60,True,0,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl18.Parent("Section2-1")
+Gui.frmTestReport.lbl18.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl21.Create(Label,"CHECK #1 PRESS DROP",True,1185,465,0,75,750,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl21.Parent("Section2-1")
+Gui.frmTestReport.lbl21.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtIntial_PressDrop.Create(TextBox,"",True,1215,300,0,1305,750,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_PressDrop.Parent("Section2-1")
+Gui.frmTestReport.lbl22.Create(Label,"Min 5 PSID",True,1215,255,0,1275,1125,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl22.Parent("Section2-1")
+Gui.frmTestReport.lbl25.Create(Label,"RELIEF VALUE OPENED AT",True,1245,600,0,45,1305,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl25.Parent("Section2-1")
+Gui.frmTestReport.lbl25.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtIntial_OpenedAt.Create(TextBox,"",True,1215,300,0,1305,1410,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_OpenedAt.Parent("Section2-1")
+Gui.frmTestReport.lbl26.Create(Label,"Min 2 PSID",True,1215,255,0,1305,1785,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl26.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_RStatusPassed.Create(CheckBox)
+Gui.frmTestReport.chkIntial_RStatusPassed.Size(1035,360)
+Gui.frmTestReport.chkIntial_RStatusPassed.Position(180,2640)
+Gui.frmTestReport.chkIntial_RStatusPassed.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_RStatusPassed.Caption("PASSED")
+Gui.frmTestReport.chkIntial_RStatusFailed.Create(CheckBox)
+Gui.frmTestReport.chkIntial_RStatusFailed.Size(1020,360)
+Gui.frmTestReport.chkIntial_RStatusFailed.Position(1275,2655)
+Gui.frmTestReport.chkIntial_RStatusFailed.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_RStatusFailed.Caption("FAILED")
+Gui.frmTestReport.lbl27.Create(Label,"CHECK # 1",True,1110,315,0,3390,705,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl27.Parent("Section2-1")
+Gui.frmTestReport.lbl27.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl28.Create(Label,"DOUBLE CHECK",True,1455,315,0,3960,375,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl28.Parent("Section2-1")
+Gui.frmTestReport.lbl28.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl29.Create(Label,"MIN 1 PSID",True,1185,255,0,4740,2955,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl29.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_doublecheck1.Create(CheckBox)
+Gui.frmTestReport.chkIntial_doublecheck1.Size(1290,285)
+Gui.frmTestReport.chkIntial_doublecheck1.Position(4620,675)
+Gui.frmTestReport.chkIntial_doublecheck1.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_doublecheck1.Alignment(1)
+Gui.frmTestReport.chkIntial_doublecheck1.Caption("TYPE # II")
+Gui.frmTestReport.chkIntial_DblTight1.Create(CheckBox)
+Gui.frmTestReport.chkIntial_DblTight1.Size(1050,360)
+Gui.frmTestReport.chkIntial_DblTight1.Position(3465,1080)
+Gui.frmTestReport.chkIntial_DblTight1.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_DblTight1.Alignment(1)
+Gui.frmTestReport.chkIntial_DblTight1.Caption("TIGHT")
+Gui.frmTestReport.chkIntial_DblLeaked1.Create(CheckBox)
+Gui.frmTestReport.chkIntial_DblLeaked1.Size(1035,360)
+Gui.frmTestReport.chkIntial_DblLeaked1.Position(3465,1515)
+Gui.frmTestReport.chkIntial_DblLeaked1.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_DblLeaked1.Alignment(1)
+Gui.frmTestReport.chkIntial_DblLeaked1.Caption("LEAKED")
+Gui.frmTestReport.txtIntial_DblType1.Create(TextBox,"",True,1215,300,0,4725,1335,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_DblType1.Parent("Section2-1")
+Gui.frmTestReport.txtIntial_DblType2.Create(TextBox,"",True,1215,300,0,4725,2550,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_DblType2.Parent("Section2-1")
+Gui.frmTestReport.lbl30.Create(Label,"CHECK # 2",True,1935,255,0,3390,2025,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl30.Parent("Section2-1")
+Gui.frmTestReport.lbl30.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl16.Create(Label,"MIN 1 PSID",True,1155,255,0,4755,1725,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl16.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_DblTight2.Create(CheckBox)
+Gui.frmTestReport.chkIntial_DblTight2.Size(1050,360)
+Gui.frmTestReport.chkIntial_DblTight2.Position(3435,2310)
+Gui.frmTestReport.chkIntial_DblTight2.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_DblTight2.Caption("TIGHT")
+Gui.frmTestReport.chkIntial_DblLeaked2.Create(CheckBox)
+Gui.frmTestReport.chkIntial_DblLeaked2.Size(1290,360)
+Gui.frmTestReport.chkIntial_DblLeaked2.Position(3420,2700)
+Gui.frmTestReport.chkIntial_DblLeaked2.Parent("Section2-1")
+Gui.frmTestReport.chkIntial_DblLeaked2.Caption("LEAKED")
+Gui.frmTestReport.lbl42.Create(Label,"RELIEF VALUE",True,1305,315,0,240,2340,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl42.Parent("Section2-1")
+Gui.frmTestReport.lbl42.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.Section2-2.Create(Frame)
+Gui.frmTestReport.Section2-2.Size(3765,3195)
+Gui.frmTestReport.Section2-2.Position(7815,180)
+Gui.frmTestReport.Section2-2.Parent("section2")
+Gui.frmTestReport.lbl19.Create(Label,"PVBA/SVBA",True,2085,255,0,1230,90,True,0,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl19.Parent("Section2-2")
+Gui.frmTestReport.lbl19.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl31.Create(Label,"AIR INLET    OPENED AT",True,1200,480,0,135,615,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl31.Parent("Section2-2")
+Gui.frmTestReport.lbl31.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl32.Create(Label,"CHECK VALVE   PRESS DROP",True,1395,570,0,1905,600,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl32.Parent("Section2-2")
+Gui.frmTestReport.lbl32.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtIntial_AirInlet.Create(TextBox,"",True,1215,300,0,105,1335,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_AirInlet.Parent("Section2-2")
+Gui.frmTestReport.txtIntial_CheckValue.Create(TextBox,"",True,1215,300,0,1935,1335,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_CheckValue.Parent("Section2-2")
+Gui.frmTestReport.lbl33.Create(Label,"MIN 1 PSID",True,1185,255,0,1935,1725,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl33.Parent("Section2-2")
+Gui.frmTestReport.lbl34.Create(Label,"MIN 1 PSID",True,1170,255,0,135,1725,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl34.Parent("Section2-2")
+Gui.frmTestReport.chkIntial_PV_Status.Create(CheckBox)
+Gui.frmTestReport.chkIntial_PV_Status.Size(1380,360)
+Gui.frmTestReport.chkIntial_PV_Status.Position(1920,2055)
+Gui.frmTestReport.chkIntial_PV_Status.Parent("Section2-2")
+Gui.frmTestReport.chkIntial_PV_Status.Caption("FAILED")
+Gui.frmTestReport.chkIntial_Opdfully.Create(CheckBox)
+Gui.frmTestReport.chkIntial_Opdfully.Size(1815,360)
+Gui.frmTestReport.chkIntial_Opdfully.Position(75,2040)
+Gui.frmTestReport.chkIntial_Opdfully.Parent("Section2-2")
+Gui.frmTestReport.chkIntial_Opdfully.Caption("OPENED FULLY")
+Gui.frmTestReport.chkIntial_DidnotOpen.Create(CheckBox)
+Gui.frmTestReport.chkIntial_DidnotOpen.Size(2070,360)
+Gui.frmTestReport.chkIntial_DidnotOpen.Position(90,2475)
+Gui.frmTestReport.chkIntial_DidnotOpen.Parent("Section2-2")
+Gui.frmTestReport.chkIntial_DidnotOpen.Caption("DID NOT OPEN")
+Gui.frmTestReport.Section2-3.Create(Frame)
+Gui.frmTestReport.Section2-3.Size(2745,3165)
+Gui.frmTestReport.Section2-3.Position(11655,180)
+Gui.frmTestReport.Section2-3.Parent("section2")
+Gui.frmTestReport.lbl20.Create(Label,"INITIAL TEST",True,1650,255,0,420,105,True,2,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl20.Parent("Section2-3")
+Gui.frmTestReport.lbl20.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Create(CheckBox)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Size(1245,360)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Position(570,435)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Parent("Section2-3")
+Gui.frmTestReport.chkIntial_TestStatusPassed.Alignment(1)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Caption("PASSED")
+Gui.frmTestReport.chkIntial_TestStatusPassed.ControlGroup(1)
+Gui.frmTestReport.chkIntial_TestStatusPassed.Event(Click,chkInitialTestPassed_Click)
+Gui.frmTestReport.chkIntial_TestStatusPassed.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Create(CheckBox)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Size(1230,360)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Position(600,810)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Parent("Section2-3")
+Gui.frmTestReport.chkIntial_TestStatusFailed.Alignment(1)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Caption("FAILED")
+Gui.frmTestReport.chkIntial_TestStatusFailed.ControlGroup(1)
+Gui.frmTestReport.chkIntial_TestStatusFailed.Event(Click,chkInitialTestFailed_Click)
+Gui.frmTestReport.chkIntial_TestStatusFailed.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl35.Create(Label,"DATE",True,630,255,0,675,1335,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl35.Parent("Section2-3")
+Gui.frmTestReport.dtIntial_TestDate.Create(DatePicker)
+Gui.frmTestReport.dtIntial_TestDate.Size(1245,285)
+Gui.frmTestReport.dtIntial_TestDate.Position(1335,1260)
+Gui.frmTestReport.dtIntial_TestDate.Parent("Section2-3")
+Gui.frmTestReport.lbl36.Create(Label,"SYSTEM PSI",True,1125,255,0,225,2085,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl36.Parent("Section2-3")
+Gui.frmTestReport.lbl37.Create(Label,"DETECTOR METER READING",True,2385,255,0,255,2490,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl37.Parent("Section2-3")
+Gui.frmTestReport.txtIntial_DeteMeter.Create(TextBox,"",True,2265,300,0,285,2730,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_DeteMeter.Parent("Section2-3")
+Gui.frmTestReport.txtIntial_SystemPSI.Create(TextBox,"",True,1050,300,0,1485,2040,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtIntial_SystemPSI.Parent("Section2-3")
+Gui.frmTestReport.Section3.Create(Frame)
+Gui.frmTestReport.Section3.Size(14505,3690)
+Gui.frmTestReport.Section3.Position(315,8475)
+Gui.frmTestReport.Section3-1.Create(Frame)
+Gui.frmTestReport.Section3-1.Size(6435,3150)
+Gui.frmTestReport.Section3-1.Position(1200,75)
+Gui.frmTestReport.Section3-1.Parent("Section3")
+Gui.frmTestReport.txtRepair_PressDrop.Create(TextBox,"",True,1215,300,0,1305,810,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_PressDrop.Parent("Section3-1")
+Gui.frmTestReport.lbl221.Create(Label,"MIN 5 PSID",True,1215,255,0,1275,1185,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl221.Parent("Section3-1")
+Gui.frmTestReport.lbl251.Create(Label,"RELIEF VALVE OPENED AT",True,1260,495,0,75,1710,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl251.Parent("Section3-1")
+Gui.frmTestReport.lbl251.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtRepair_OpenedAt.Create(TextBox,"",True,1215,300,0,1350,1710,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_OpenedAt.Parent("Section3-1")
+Gui.frmTestReport.lbl261.Create(Label,"MIN 2 PSID",True,1215,255,0,1350,2085,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl261.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_RStatusPassed.Create(CheckBox)
+Gui.frmTestReport.chkRepair_RStatusPassed.Size(1020,360)
+Gui.frmTestReport.chkRepair_RStatusPassed.Position(360,2625)
+Gui.frmTestReport.chkRepair_RStatusPassed.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_RStatusPassed.Caption("PASSED")
+Gui.frmTestReport.chkRepair_RStatusFailed.Create(CheckBox)
+Gui.frmTestReport.chkRepair_RStatusFailed.Size(1065,360)
+Gui.frmTestReport.chkRepair_RStatusFailed.Position(1410,2640)
+Gui.frmTestReport.chkRepair_RStatusFailed.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_RStatusFailed.Caption("FAILED")
+Gui.frmTestReport.lbl271.Create(Label,"CHECK # 1",True,1110,315,0,3345,765,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl271.Parent("Section3-1")
+Gui.frmTestReport.lbl271.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl281.Create(Label,"DOUBLE CHECK",True,1395,315,0,3960,435,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl281.Parent("Section3-1")
+Gui.frmTestReport.lbl281.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl291.Create(Label,"MIN 1 PSID",True,1185,255,0,4695,2910,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl291.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_DblCheck1.Create(CheckBox)
+Gui.frmTestReport.chkRepair_DblCheck1.Size(1350,285)
+Gui.frmTestReport.chkRepair_DblCheck1.Position(4605,735)
+Gui.frmTestReport.chkRepair_DblCheck1.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_DblCheck1.Alignment(1)
+Gui.frmTestReport.chkRepair_DblCheck1.Caption("TYPE # II")
+Gui.frmTestReport.txtRepair_DblType1.Create(TextBox,"",True,1215,300,0,4665,1320,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_DblType1.Parent("Section3-1")
+Gui.frmTestReport.txtRepair_DblType2.Create(TextBox,"",True,1215,300,0,4680,2535,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_DblType2.Parent("Section3-1")
+Gui.frmTestReport.lbl301.Create(Label,"CHECK # 2",True,1935,255,0,3345,1995,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl301.Parent("Section3-1")
+Gui.frmTestReport.lbl301.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.chkRepair_DblTight2.Create(CheckBox)
+Gui.frmTestReport.chkRepair_DblTight2.Size(945,360)
+Gui.frmTestReport.chkRepair_DblTight2.Position(3420,2220)
+Gui.frmTestReport.chkRepair_DblTight2.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_DblTight2.Alignment(1)
+Gui.frmTestReport.chkRepair_DblTight2.Caption("TIGHT")
+Gui.frmTestReport.chkRepair_DblTight1.Create(CheckBox)
+Gui.frmTestReport.chkRepair_DblTight1.Size(915,360)
+Gui.frmTestReport.chkRepair_DblTight1.Position(3420,1065)
+Gui.frmTestReport.chkRepair_DblTight1.Parent("Section3-1")
+Gui.frmTestReport.chkRepair_DblTight1.Alignment(1)
+Gui.frmTestReport.chkRepair_DblTight1.Caption("TIGHT")
+Gui.frmTestReport.lbl161.Create(Label,"MIN 1 PSID",True,1155,255,0,4725,1710,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl161.Parent("Section3-1")
+Gui.frmTestReport.lbl24.Create(Label,"CHECK #1 PRESS DROP",True,1245,555,0,45,735,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl24.Parent("Section3-1")
+Gui.frmTestReport.lbl24.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl192.Create(Label,"REDUCED PRESSURE ASSEMBLY",True,3780,255,0,1905,120,True,0,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl192.Parent("Section3-1")
+Gui.frmTestReport.lbl192.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl272.Create(Label,"Relief Valve",True,1110,315,0,300,2295,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl272.Parent("Section3-1")
+Gui.frmTestReport.Section3-2.Create(Frame)
+Gui.frmTestReport.Section3-2.Size(3765,3165)
+Gui.frmTestReport.Section3-2.Position(7800,75)
+Gui.frmTestReport.Section3-2.Parent("Section3")
+Gui.frmTestReport.lbl191.Create(Label,"PVBA/SVBA",True,1320,255,0,1230,90,True,0,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl191.Parent("Section3-2")
+Gui.frmTestReport.lbl191.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl311.Create(Label,"AIR INLET    OPENED AT",True,1200,495,0,225,855,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl311.Parent("Section3-2")
+Gui.frmTestReport.lbl311.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl321.Create(Label,"CHECK VALVE   PRESS DROP",True,1395,525,0,1905,825,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl321.Parent("Section3-2")
+Gui.frmTestReport.lbl321.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtRepair_AirInlet.Create(TextBox,"",True,1215,300,0,225,1320,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_AirInlet.Parent("Section3-2")
+Gui.frmTestReport.txtRepair_CheckValue.Create(TextBox,"",True,1215,300,0,2025,1320,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_CheckValue.Parent("Section3-2")
+Gui.frmTestReport.lbl331.Create(Label,"MIN 1 PSID",True,1185,255,0,2055,1710,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl331.Parent("Section3-2")
+Gui.frmTestReport.lbl341.Create(Label,"MIN 1 PSID",True,1170,255,0,255,1710,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl341.Parent("Section3-2")
+Gui.frmTestReport.chkRepair_Opdfully.Create(CheckBox)
+Gui.frmTestReport.chkRepair_Opdfully.Size(2040,360)
+Gui.frmTestReport.chkRepair_Opdfully.Position(180,2520)
+Gui.frmTestReport.chkRepair_Opdfully.Parent("Section3-2")
+Gui.frmTestReport.chkRepair_Opdfully.Caption("OPENED FULLY")
+Gui.frmTestReport.Section3-3.Create(Frame)
+Gui.frmTestReport.Section3-3.Size(2745,2775)
+Gui.frmTestReport.Section3-3.Position(11685,75)
+Gui.frmTestReport.Section3-3.Parent("Section3")
+Gui.frmTestReport.lbl201.Create(Label,"TEST AFTER REPAIRS",True,1575,525,0,495,90,True,2,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl201.Parent("Section3-3")
+Gui.frmTestReport.lbl201.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.chkRepair_TestStatus.Create(CheckBox)
+Gui.frmTestReport.chkRepair_TestStatus.Size(1200,360)
+Gui.frmTestReport.chkRepair_TestStatus.Position(390,1710)
+Gui.frmTestReport.chkRepair_TestStatus.Parent("Section3-3")
+Gui.frmTestReport.chkRepair_TestStatus.Alignment(1)
+Gui.frmTestReport.chkRepair_TestStatus.Caption("PASSED")
+Gui.frmTestReport.lbl351.Create(Label,"DATE",True,630,255,0,360,1260,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl351.Parent("Section3-3")
+Gui.frmTestReport.txtRepair_TestDate.Create(TextBox,"",True,1095,300,0,1380,1185,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtRepair_TestDate.Parent("Section3-3")
+Gui.frmTestReport.lbl23.Create(Label,"REPAIR RESULTS",True,1095,1080,0,105,1425,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl23.Parent("Section3")
+Gui.frmTestReport.lbl23.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl39.Create(Label,"GAUGE S/N",True,1095,255,0,855,3435,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl39.Parent("Section3")
+Gui.frmTestReport.lbl40.Create(Label,"CALIBRATION DATE",True,1890,255,0,9990,3435,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl40.Parent("Section3")
+Gui.frmTestReport.lbl41.Create(Label,"MAKE/MODEL",True,1290,255,0,5205,3420,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl41.Parent("Section3")
+Gui.frmTestReport.txtguageSN.Create(TextBox,"",True,3075,300,0,1995,3360,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtguageSN.Parent("Section3")
+Gui.frmTestReport.txtmakemodel.Create(TextBox,"",True,3285,300,0,6525,3360,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.txtmakemodel.Parent("Section3")
+Gui.frmTestReport.dtpcalibrationdt.Create(DatePicker)
+Gui.frmTestReport.dtpcalibrationdt.Size(1380,285)
+Gui.frmTestReport.dtpcalibrationdt.Position(11985,3375)
+Gui.frmTestReport.dtpcalibrationdt.Parent("Section3")
+Gui.frmTestReport.lbl38.Create(Label,"NOTES REPAIR PARTS",True,1245,375,0,195,8100,True,2,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl38.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.txtRepairNotes.Create(TextBoxR)
+Gui.frmTestReport.txtRepairNotes.Size(13260,555)
+Gui.frmTestReport.txtRepairNotes.Position(1500,7950)
+Gui.frmTestReport.Section4.Create(Frame)
+Gui.frmTestReport.Section4.Size(14475,1785)
+Gui.frmTestReport.Section4.Position(330,12135)
+Gui.frmTestReport.lbl43.Create(Label,"INITIAL TEST",True,1425,255,0,2670,165,True,0,"Arial",10,-2147483633,0)
+Gui.frmTestReport.lbl43.Parent("Section4")
+Gui.frmTestReport.lbl43.FontStyle(True,False,False,False,False)
+Gui.frmTestReport.lbl45.Create(Label,"TESTER NAME(PRINTED)",True,1935,360,0,255,765,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl45.Parent("Section4")
+Gui.frmTestReport.lbl46.Create(Label,"TESTER ADDRESS",True,1845,255,0,255,1170,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl46.Parent("Section4")
+Gui.frmTestReport.lbl47.Create(Label,"COMPANY NAME",True,1785,255,0,255,1500,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl47.Parent("Section4")
+Gui.frmTestReport.lbl50.Create(Label,"EMAIL",True,1575,255,0,10110,1005,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl50.Parent("Section4")
+Gui.frmTestReport.lbl49.Create(Label,"PHONE #",True,1440,255,0,10110,705,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl49.Parent("Section4")
+Gui.frmTestReport.lbl48.Create(Label,"TESTER CERT #",True,1425,255,0,10095,300,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl48.Parent("Section4")
+Gui.frmTestReport.chkWaterRestored.Create(CheckBox)
+Gui.frmTestReport.chkWaterRestored.Size(2910,360)
+Gui.frmTestReport.chkWaterRestored.Position(10110,1245)
+Gui.frmTestReport.chkWaterRestored.Parent("Section4")
+Gui.frmTestReport.chkWaterRestored.Caption("WATER RESTORED ?")
+Gui.frmTestReport.lbl51.Create(Label,"TESTER SIGNATURE",True,1935,255,0,255,390,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lbl51.Parent("Section4")
+Gui.frmTestReport.lblTesteradd.Create(Label,"Tester Address",True,1935,255,0,2310,1170,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblTesteradd.Parent("Section4")
+Gui.frmTestReport.lblTesterName.Create(Label,"Tester Name",True,1935,255,0,2310,795,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblTesterName.Parent("Section4")
+Gui.frmTestReport.lblcmpyname.Create(Label,"Company Name",True,1935,255,0,2310,1500,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblcmpyname.Parent("Section4")
+Gui.frmTestReport.lblcmpyemail.Create(Label,"samee@cc.com",True,2295,255,0,12090,1050,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblcmpyemail.Parent("Section4")
+Gui.frmTestReport.lblcmpyPH.Create(Label,"281-902-9000",True,1935,255,0,12120,720,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblcmpyPH.Parent("Section4")
+Gui.frmTestReport.lblEmployee.Create(Label,"",False,1110,255,0,5715,345,True,0,"Arial",8,-2147483633,0)
+Gui.frmTestReport.lblEmployee.Parent("Section4")
+Gui.frmTestReport.lblTesterCert.Create(TextBox,"",True,1965,300,0,12105,255,True,0,"Arial",8,-2147483643,1)
+Gui.frmTestReport.lblTesterCert.Parent("Section4")
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Global.bSave.Declare 
+V.Global.lRCnt.Declare 
+v.Local.sSql.Declare 
+v.Local.sOrder.Declare 
+v.Global.sLine.Declare 
+v.Global.sCustno.Declare 
+v.Global.sMode.Declare 
+v.Global.sOrder.Declare 
+v.Global.chkType.Declare(string)
+v.Global.chkType24.Declare(string)
+v.Global.bScrShotV.Declare
+v.local.sRet.Declare 
+
+'GUI.frmTestReport.section1.Anchor(15)
+'gui.frmTestReport..Show 
+
+
+
+
+'f.Intrinsic.Control.CallSub(exportdata)
+
+'F.Intrinsic.Control.ExitSub
+
+'	f.Intrinsic.Control.BlockEvents 
+	F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass,500)
+
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		F.Intrinsic.Control.Case(14350)
+			Variable.Passed.000201.Set("Add Address")
+			f.Intrinsic.Control.End 
+		F.Intrinsic.Control.Case(14360)
+			F.Intrinsic.Control.If(Variable.caller.switches,=,"N")
+				f.Intrinsic.String.LPad(Variable.Passed.000002.Trim,"0",6,v.local.sRet)
+			f.Intrinsic.Control.Else
+				v.local.sRet.Set(Variable.Passed.000002.Trim)
+			f.Intrinsic.Control.EndIf
+			Gui.frmMaint.txtCust.Text(v.local.sRet)
+			f.Intrinsic.Control.CallSub(launchmaint,"cScreen","AR")
+			Gui.frmMaint.cmdCustBrow.Visible(false)
+			Gui.frmMaint.cmdsave.Visible(false)
+			GUI.frmMaint.GsGridMaint.Anchor(15)
+			gui.frmMaint..Show 
+'			gui.frmMaint..WindowState(2)
+		F.Intrinsic.Control.Case(11560)
+			Variable.Passed.000201.Set("Sel Address")
+			Variable.Passed.000202.Set("Test Report")
+			f.Intrinsic.Control.End 
+		f.Intrinsic.Control.Case(11910)
+			f.Intrinsic.Control.If(Variable.Passed.000003,<>,"")
+				'	Variable.Passed.000003 pad 4
+				'Variable.Passed.000006  customer
+				Gui.frmMaint.txtCust.Text(Variable.Passed.000006.Trim)
+				Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+				f.Intrinsic.Control.CallSub(launchmaint,"cScreen","ORD")
+				Function.Intrinsic.UI.CloseWaitDialog 
+				Gui.frmMaint.cmdCustBrow.Visible(false)
+				Gui.frmMaint.cmdsave.Visible(false)
+				GUI.frmMaint.GsGridMaint.Anchor(15)
+				gui.frmMaint..Show 
+'				gui.frmMaint..WindowState(2)
+				'
+				f.Intrinsic.String.LPad(Variable.Passed.000003,"0",7,v.Local.sOrder)
+
+				f.Data.DataTable.Create("DTAdd",True)
+				f.Data.DataTable.AddColumn("DTAdd","ID","long")
+				f.Data.DataTable.AddColumn("DTAdd","Order_no","string")
+				f.Data.DataTable.AddRow("DTAdd","ID",0,"Order_no",v.Local.sOrder)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.Control.End
+			f.Intrinsic.Control.endif
+		'Script2 button OE
+		f.Intrinsic.Control.Case(11920)
+			f.Intrinsic.Control.If(Variable.Passed.000003,<>,"")
+'				F.Intrinsic.UI.ChangeWaitStatus("Opening Browser")
+				Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+				f.Intrinsic.Control.CallSub(selectorderline,"ORDNO",Variable.Passed.000003)
+				F.Intrinsic.UI.CloseWaitDialog 
+				gui.frmTestReport..Show 
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.Case(33002)
+			'Script1 button OE - View History
+			f.Intrinsic.Control.If(Variable.Passed.000002,<>,"")
+				v.Global.sMode.Set("HIS")
+'				F.Intrinsic.UI.ChangeWaitStatus("Opening Browser")
+				Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+				f.Intrinsic.Control.CallSub(selectorderline,"ORDNO",Variable.Passed.000002)
+				F.Intrinsic.UI.CloseWaitDialog 
+				gui.frmTestReport..Show 
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.Case(33003)
+			'Script2 button OE - View History
+			f.Intrinsic.Control.If(Variable.Passed.000007,<>,"")
+				'	Variable.Passed.000003 pad 4
+				'Variable.Passed.000006  customer
+				Gui.frmMaint.txtCust.Text(Variable.Passed.000007.Trim)
+				Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+				f.Intrinsic.Control.CallSub(launchmaint,"cScreen","ORD")
+				Function.Intrinsic.UI.CloseWaitDialog 
+				Gui.frmMaint.cmdCustBrow.Visible(false)
+				Gui.frmMaint.cmdsave.Visible(false)
+				GUI.frmMaint.GsGridMaint.Anchor(15)
+				gui.frmMaint..Show 
+'				gui.frmMaint..WindowState(2)
+				'
+				f.Intrinsic.String.LPad(Variable.Passed.000003,"0",7,v.Local.sOrder)
+
+				f.Data.DataTable.Create("DTAdd",True)
+				f.Data.DataTable.AddColumn("DTAdd","ID","long")
+				f.Data.DataTable.AddColumn("DTAdd","Order_no","string")
+				f.Data.DataTable.AddRow("DTAdd","ID",0,"Order_no",v.Local.sOrder)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.Control.End
+			f.Intrinsic.Control.endif
+		f.Intrinsic.Control.Case(35302)
+			'Script1 button OE - View
+			f.Intrinsic.Control.If(Variable.Passed.000022,<>,"")
+'				F.Intrinsic.UI.ChangeWaitStatus("Opening Browser")
+				Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+				f.Intrinsic.Control.CallSub(selectorderline,"ORDNO",Variable.Passed.000022)
+				F.Intrinsic.UI.CloseWaitDialog 
+				gui.frmTestReport..Show 
+			f.Intrinsic.Control.endif
+'		OE - View
+		f.Intrinsic.Control.Case(35301)
+			Variable.Passed.000136.Set("Test Report")
+'		OE - View History
+		f.Intrinsic.Control.Case(33001)
+			Variable.Passed.000153.Set("Test Report")
+			Variable.Passed.000158.Set("Sel Address")
+		f.Intrinsic.Control.CaseElse
+			Function.Intrinsic.UI.InvokeWaitDialog("Loading Data please wait ...")
+			f.Intrinsic.Control.CallSub(launch_bfdash)
+			GUI.frmMaint.GsGridMaint.Anchor(15)
+
+'			Gui.frmMaint..Size(25465,11205)
+'			Gui.frmMaint.GsGridMaint.Size(21910,9645)
+			gui.frmMaint.lbl1.Visible(false)
+			gui.frmMaint.cmdCustBrow.Visible(false)
+			gui.frmMaint.txtCust.Visible(false)
+			gui.frmMaint..Show 
+			gui.frmMaint..WindowState(2)
+			F.Intrinsic.UI.CloseWaitDialog 
+	F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+'	f.Intrinsic.Control.UnBlockEvents 
+	Function.Intrinsic.UI.CloseWaitDialog 
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.frmMaint_UnLoad.Start
+F.Intrinsic.Control.SetErrorHandler("frmMaint_UnLoad_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+variable.local.returnvalue.Declare(String)
+
+'Screenshot called
+f.Intrinsic.Control.If(v.Global.bScrShotV,=,true)
+	gui.frmMaint..Visible(false)
+	v.Global.bScrShotV.Set(false)
+	F.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Global.bSave,=,True)
+	Function.Intrinsic.UI.MsgBox("Changes not saved, Do you want to save the changes ?", "Confirm", 4, variable.local.returnvalue)
+	F.Intrinsic.Control.If(variable.local.returnvalue,=,6)
+		f.Intrinsic.Control.CallSub(cmdsave_click)
+	f.Intrinsic.Control.EndIf 
+f.Intrinsic.Control.EndIf 
+
+'F.ODBC.Connection!con.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("frmMaint_UnLoad_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.frmMaint_UnLoad.End
+
+Program.Sub.GsGridMaint_RowCellClick.Start
+F.Intrinsic.Control.SetErrorHandler("GsGridMaint_RowCellClick_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+V.Local.sSql.Declare(String)
+variable.local.sTitles.Declare 
+variable.local.sWidths.Declare 
+Variable.local.sRet.Declare 
+Variable.local.iRet.Declare 
+V.Local.sSO.Declare 
+
+'
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+'
+'
+
+
+f.Intrinsic.Control.BlockEvents 
+
+f.Intrinsic.Control.If(V.Args.column,=,"SalesOrder")
+	'SO_NO
+	'SO_Line
+	gui.frmMaint.GsGridMaint.GetCellValue("GVHook",0,V.Args.RowIndex,V.Local.sSO)
+	f.Intrinsic.Control.If(V.Local.sSO.Trim,<>,"")
+		f.Intrinsic.String.Split(V.Local.sSO,"-",V.Local.sSO)
+		F.Intrinsic.String.Concat(V.Local.sSO(0),"!*!","O","!*!","*!*ZDR*!*",V.Local.sSO)
+		F.Global.General.CallWrapperSync(200000,V.Local.sSO)
+	f.Intrinsic.Control.EndIf 
+f.Intrinsic.Control.ElseIf(V.Args.column,=,"Select")
+	gui.frmMaint.GsGridMaint.GetCellValue("GVHook",15,V.Args.RowIndex,Variable.local.sRet)
+	f.Intrinsic.Control.If(Variable.local.sRet,=,"Delete")
+		gui.frmMaint.GsGridMaint.GetCellValue("GVHook",0,V.Args.RowIndex,Variable.local.sRet)
+		f.Intrinsic.Control.CallSub(selectadd,"SelAdd",Variable.local.sRet)
+	f.Intrinsic.Control.endif
+f.Intrinsic.Control.elseIf(V.Args.column,=,"Action")
+	gui.frmMaint.GsGridMaint.GetCellValue("GVHook",15,V.Args.RowIndex,Variable.local.sRet)
+	f.Intrinsic.Control.If(Variable.local.sRet,=,"Delete")
+		f.Data.DataTable.DeleteRow("DTHook",V.Args.RowHandle)
+		V.Global.bSave.Set(False)
+		gui.frmMaint.cmdsave.Enabled(True)
+		F.Data.DataTable.SaveToDB("DTHook","con","GCG_4954_BFAddress","ID*!*Cust",4,"ID@!@ID*!*Cust@!@Cust*!*Name@!@Name*!*Address1@!@Address1*!*Address2@!@Address2*!*City@!@City*!*Zip@!@Zip*!*State@!@State*!*Country@!@Country*!*Main_Tel@!@Main_Tel*!*Contact_Name@!@Contact_Name*!*Contact_Title@!@Contact_Title*!*Comments@!@Comments*!*Contact_Email@!@Contact_Email*!*Contact_Tel@!@Contact_Tel")	
+	'ADD	
+	f.Intrinsic.Control.Else 
+		V.Global.bSave.Set(True)
+		F.Data.DataTable.AcceptChanges("DTHook")
+		f.Intrinsic.Control.If(v.DataTable.DTHook(v.Args.Rowhandle).Name!FieldValtrim,=,"")
+			f.Intrinsic.Control.UnBlockEvents 
+			f.Intrinsic.Control.ExitSub 
+		f.Intrinsic.Control.EndIf 
+	
+		f.Intrinsic.Control.CallSub(cmdsave_click)
+		f.Intrinsic.Control.If(V.Args.bRet,=,True)
+			f.Data.DataTable.SetValue("DTHooK",V.Args.RowHandle,"Action","Delete")
+			f.Data.DataTable.AddRow("DTHook","ID",V.Global.lRCnt,"Cust",v.Screen.frmMaint!txtCust.Text,"Action","Add")
+			f.Intrinsic.Math.Add(V.Global.lRCnt,1,V.Global.lRCnt)
+			Gui.frmMaint.GsGridMaint.FocusCell("GVHook",V.Args.RowIndex,2)
+		f.Intrinsic.Control.Endif
+	Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndIf
+f.Intrinsic.Control.UnBlockEvents 
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GsGridMaint_RowCellClick_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+
+
+
+	f.Intrinsic.Control.UnBlockEvents 
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GsGridMaint_RowCellClick.End
+
+Program.Sub.GsGridMaint_CellValueChanged.Start
+F.Intrinsic.Control.SetErrorHandler("GsGridMaint_CellValueChanged_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+V.Local.sRet.Declare(String)
+
+
+
+'
+'f.Intrinsic.Control.If(V.Args.column,=,"Button_name")
+'	gui.frmMaint.GsGridMaint.GetCellValue("GVHook",3,V.Args.RowIndex,Variable.local.sRet)
+''	F.Data.DataTable.SaveToDB("DTHook","con","GCG_4443_GUIScrMaint","Hook_ID",256,"Hook_ID@!@Hook_ID*!*Button_name@!@Button_name")	
+'	f.Intrinsic.Control.If(Variable.local.sRet,=,"Add")
+'		f.Data.DataTable.AddRow("DTHook","Hook_ID","","Button_Name","","Button_Name","","Action","Add")
+'		gui.frmMaint.GsGridMaint.SetCellValue("GVHook",3,V.Args.RowIndex,"Delete")
+'	Function.Intrinsic.Control.EndIf
+	V.Global.bSave.Set(True)
+'	gui.frmMaint.cmdsave.Enabled(True)
+'Function.Intrinsic.Control.EndIf
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GsGridMaint_CellValueChanged_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GsGridMaint_CellValueChanged.End
+
+Program.Sub.cmdsave_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitle.Declare
+
+
+
+'	F.Intrinsic.Control.If(V.DataView.DTHook!DVHdrHook.Exists,=,True)
+'		Function.Data.DataView.Close("DTHook","DVHdrHook")
+'	f.Intrinsic.Control.EndIf 
+'	
+'	f.Data.DataView.Create("DTHook","DVHdrHook",22,"Cust<>''","")
+'	f.Data.DataView.ToDataTable("DTHook","DVHdrHook","DTHdrSave")
+'	F.Data.DataTable.SaveToDB("DTHook","con","GCG_4954_BFAddress","ID*!*Cust",256,"ID@!@ID*!*Cust@!@Cust*!*Name@!@Name*!*Address1@!@Address1*!*Address2@!@Address2*!*City@!@City*!*Zip@!@Zip*!*State@!@State*!*Country@!@Country*!*Main_Tel@!@Main_Tel*!*Contact_Name@!@Contact_Name*!*Contact_Title@!@Contact_Title*!*Comments@!@Comments*!*Contact_Email@!@Contact_Email")	
+
+'
+
+	F.Data.DataTable.AcceptChanges("DTHook")
+	gui.frmMaint.GsGridMaint.GetColumnNamebyIndex("GVHook",0,v.Local.sTitle)
+	f.Intrinsic.Control.If(V.Local.sTitle,=,"SalesOrder")
+			Function.Data.DataTable.SaveToDB("DTHook", "con", "GCG_4954_BFData", "Order_No*!*order_line",256,"Order_No@!@Order_No*!*order_line@!@order_line*!*BF_Close@!@BF_Close")
+	f.Intrinsic.Control.else
+		F.Intrinsic.Control.If(V.DataView.DTHook!DVHdrHook.Exists,=,True)
+			Function.Data.DataView.Close("DTHook","DVHdrHook")
+		f.Intrinsic.Control.EndIf 
+		f.Data.DataView.Create("DTHook","DVHdrHook",22,"Name<>''","")
+		f.Data.DataView.ToDataTable("DTHook","DVHdrHook","DTHdrSave")
+		F.Data.DataTable.SaveToDB("DTHdrSave","con","GCG_4954_BFAddress","ID*!*Cust",256,"ID@!@ID*!*Cust@!@Cust*!*Name@!@Name*!*Address1@!@Address1*!*Address2@!@Address2*!*City@!@City*!*Zip@!@Zip*!*State@!@State*!*Country@!@Country*!*Main_Tel@!@Main_Tel*!*Contact_Name@!@Contact_Name*!*Contact_Title@!@Contact_Title*!*Comments@!@Comments*!*Contact_Email@!@Contact_Email*!*Contact_Tel@!@Contact_Tel")	
+		
+	f.Intrinsic.Control.EndIf 
+	f.Intrinsic.Variable.AddRV("bRet","True")
+	F.Data.DataTable.AcceptChanges("DTHook")
+	V.Global.bSave.Set(False)
+'	Function.Data.DataView.Close("DTHook","DVHdrHook")
+'	Function.Data.DataTable.Close("DTHdrSave")
+	gui.frmMaint.cmdsave.Enabled(false)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	f.Intrinsic.Variable.AddRV("bRet","False")
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdsave_Click.End
+
+Program.Sub.LaunchMaint.Start
+F.Intrinsic.Control.SetErrorHandler("LaunchMaint_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+
+V.Local.sSql.Declare(String)
+v.Local.iret.Declare 
+v.Local.i.Declare 
+v.Local.stitle.Declare 
+
+	gui.frmMaint..size(14130,10830)
+
+	F.Intrinsic.String.Build("select ID,Cust,Name,Address1,Address2,City,State,Zip,Country,Main_Tel,Contact_Name,Contact_Title,Contact_Tel,Contact_Email,Comments  from GCG_4954_BFAddress where Cust = '{0}' order by ID",v.Screen.frmMaint!txtCust.Text,V.Local.sSql)
+
+'	V.Local.sSql.Set("select Hook_ID,rtrim(Script_Desc) as Script_Desc,Button_Name from GCG_4443_GUIScrMaint join HOOK_USER on ID = Hook_id order by 2")
+
+	F.Intrinsic.Control.If(v.DataTable.DTHook.Exists,=,True)
+		F.Data.DataTable.Close("DTHook")
+	f.Intrinsic.Control.EndIf 
+
+	F.Data.DataTable.CreateFromSQL("DTHook","Con",v.Local.sSql,True)
+'	F.Intrinsic.Control.If(Variable.DataTable.DTHook.rowcount,=,0)
+'		f.Intrinsic.Control.ExitSub 
+'	f.Intrinsic.Control.EndIf
+
+
+	F.Data.DataView.Create("DTHook","DVHook")
+
+	gui.frmMaint.GsGridMaint.SuspendLayout 
+
+	F.Data.DataTable.AddColumn("DTHook","Action","string","Delete")
+
+	f.Intrinsic.Control.If(v.Args.cScreen,=,"ORD")
+		F.Data.DataTable.AddColumn("DTHook","Select","string","Select")
+	f.Intrinsic.Control.EndIf 
+
+
+	f.Intrinsic.Control.If(Variable.DataTable.DTHook.rowcount,>,0)
+		v.Local.iret.Set(V.DataTable.DTHook(Variable.DataTable.DTHook.rowcount--).ID!FieldVal)
+	f.Intrinsic.Control.Else
+		v.Local.iret.Set(-1)
+	f.Intrinsic.Control.EndIf
+
+	f.Intrinsic.Math.Add(v.local.iret,1,V.Global.lRCnt)
+	f.Data.DataTable.AddRow("DTHook","ID",v.Global.lRCnt,"Cust",v.Screen.frmMaint!txtCust.Text,"Action","Add")
+	f.Intrinsic.Math.Add(v.Global.lRCnt,1,V.Global.lRCnt)
+
+	gui.frmMaint.GsGridMaint.AddGridViewFromDataView("GVHook","DTHook","DVHook")
+
+'	gui.frmMaint.GsGridMaint.ColumnEdit("GVHook","Action","EditorButton","")
+
+
+'	Gui.frmMaint.GsGridMaint.SetCellAppearance("GVHook",-1,1,"BackColor","#A9A9A9")	
+'	gui.frmTestReport2.gsgcNest.SetCellAppearance("GridNest", 3, V.Global.iSupplyDemand, "backcolor", V.Color.White)
+
+	gui.frmMaint.GsGridMaint.MainView("GVHook")
+
+'	Gui.frmMaint.GsGridMaint.SetCellDisplayText("GVHook", 1,2, "Add")
+
+'	f.Data.DataTable.SetValue("DTHook",1,"Action","ADD")
+
+'	F.Data.DataTable.SetValue("dtApp",V.Local.i1,"Name",V.DataTable.dtVen(V.Local.sRet).name_vendor!FieldValTrim)''''
+
+'	Cust,Name,Address1,Address2,City,Zip,State,Country,Main_Tel,Contact_Name,Contact_Title,Contact_Tel,Comments,Contact_Email
+
+	gui.frmMaint.GsGridMaint.GetColumnCount("GVHook",v.Local.iret)
+	f.Intrinsic.Math.Sub(v.Local.iret,1,v.Local.iret)
+	f.Intrinsic.Control.For(v.Local.i,0,v.Local.iret,1)
+		gui.frmMaint.GsGridMaint.GetColumnNamebyIndex("GVHook",v.Local.i,v.Local.stitle)
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"AllowEdit",False)
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"ReadOnly",True)
+
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"HeaderFontBold","True")
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "ColumnPanelRowHeight", "25")
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsViewRowAutoHeight", "True")
+'	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook","OptionsViewColumnAutoWidth",False)
+
+
+
+	gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook", "Action", "tagName1","NotEqual","1")
+	gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook",  "Action", "tagName1", "backcolor", "#D3D3D3")
+
+	gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook", "Action", "tagName1","NotEqual","1")
+	gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook",  "Action", "tagName1", "FontBold", True)
+
+
+
+	f.Intrinsic.Control.If(v.Args.cScreen,=,"ORD")
+		gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook", "Select", "tagName1","NotEqual","1")
+		gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook",  "Select", "tagName1", "backcolor", "#D3D3D3")
+		gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook","Select", "tagName1","NotEqual","1")
+		gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook", "Select", "tagName1", "FontBold", True)
+	f.Intrinsic.Control.EndIf 
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "ID", "Visible", False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "Cust", "Visible", False)
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "Comments", "CellWordWrap", "Wrap")
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","ID","Caption","ID")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","Caption","Name")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","Caption","Address1")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","Caption","Address2")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","Caption","City")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","Caption","Zip")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","Caption","State")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","Caption","Country")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","Caption","Main Tel")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","Caption","Contact Name")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","Caption","Contact Title")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Tel","Caption","Contact Tel")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Comments","Caption","Comments")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","Caption","Contact Email")
+
+
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","MinWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","MinWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","MinWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","MinWidth",30)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","MaxWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Tel","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Comments","MinWidth",180)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Action","MinWidth",50)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Action","MaxWidth",50)
+
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","EditMask","[^*\*]{0,30}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","EditMask","[^*\*]{0,30}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","EditMask","[^*\*]{0,30}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","EditMask","[^*\*]{0,15}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","EditMask","[^*\*]{0,13}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","EditMask","[^*\*]{0,3}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","EditMask","[^*\*]{0,12}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","EditMask","[^*\*]{0,30}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","EditMask","[^*\*]{0,50}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","EditMask","[^*\*]{0,13}")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","EditMaskType","regex")
+	Gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","EditMask","[^*\*]{0,30}")
+
+	f.Intrinsic.Control.If(v.Args.cScreen,=,"ORD")
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Select","MinWidth",60)
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Select","MaxWidth",60)
+	f.Intrinsic.Control.EndIf 
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address1","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Address2","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","City","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Zip","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Country","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Main_Tel","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Name","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Title","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Tel","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Tel","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Comments","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Comments","ReadOnly",False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Contact_Email","ReadOnly",False)
+
+	Gui.frmMaint.GsGridMaint.SetGridviewProperty("GVHook","OptionsViewColumnAutoWidth","False")
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsSelectionEnableAppearanceFocusedRow", "False") 
+
+	gui.frmMaint.GsGridMaint.ResumeLayout 
+
+
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LaunchMaint_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LaunchMaint.End
+
+Program.Sub.cmdCustBrow_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdCustBrow_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+Variable.Local.sRet.Declare(String)
+
+Function.Intrinsic.UI.Browser(205, "", Variable.Local.sRet)
+
+f.Intrinsic.String.Split(Variable.Local.sRet,"*!*",Variable.Local.sRet)
+f.Intrinsic.Control.If(Variable.Local.sRet,<>,"***CANCEL***")
+	gui.frmMaint.txtCust.Text(Variable.Local.sRet(0))
+	f.Intrinsic.Control.CallSub(launchmaint)
+f.Intrinsic.Control.EndIf 
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdCustBrow_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdCustBrow_Click.End
+
+Program.Sub.Selectadd.Start
+F.Intrinsic.Control.SetErrorHandler("Selectadd_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+	F.Data.DataTable.SetValue("DTAdd",0,"ID",v.Args.SelAdd)
+	F.Data.DataTable.SaveToDB("DTAdd","con","GCG_4954_BFLink","Order_no",256,"ID@!@ID*!*Order_no@!@Order_no")
+	f.Intrinsic.Control.CallSub(frmmaint_unload)	
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Selectadd_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Selectadd.End
+
+Program.Sub.Read_Userfields.Start
+F.Intrinsic.Control.SetErrorHandler("Read_Userfields_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.bRet.Declare
+
+'11920
+
+
+f.Intrinsic.String.Build("select Ucase(USER1) 'USER1',Ucase(USER2) 'USER2',Ucase(USER3) 'USER3',Ucase(USER4) 'USER4',Ucase(USER5) 'USER5',Ucase(USER6) 'USER6',Ucase(USER7) 'USER7',Ucase(USER8) 'USER8',Ucase(USER9) 'USER9',Ucase(USER10) 'USER10',USER11,USER12,USER13,USER14,USER15,USER16,USER17,USER18,USER24 from INV_EXTRA where part = '{0}'",v.Args.SerialPart,v.Local.sSQL)
+f.Data.DataTable.CreateFromSQL("DTUserfld","Con",v.Local.sSQL)
+	f.Intrinsic.Control.If(V.DataTable.DTUserfld.RowCount,>,0)
+		gui.frmTestReport.lblmake.Caption(V.DataTable.DTUserfld(0).USER12!FieldValTrim)  
+		gui.frmTestReport.lblmodel.Caption(V.DataTable.DTUserfld(0).USER13!FieldValTrim) 
+		gui.frmTestReport.lblsize.Caption(V.DataTable.DTUserfld(0).USER11!FieldValTrim) 
+		gui.frmTestReport.lblwatersupplier.Caption(V.DataTable.DTUserfld(0).USER14!FieldValTrim) 
+
+'		15.16.17.18
+		f.Intrinsic.String.Build("{0} {1} {2} {3}",V.DataTable.DTUserfld(0).USER15!FieldValTrim,V.DataTable.DTUserfld(0).USER16!FieldValTrim,V.DataTable.DTUserfld(0).USER17!FieldValTrim,V.DataTable.DTUserfld(0).USER18!FieldValTrim,V.Local.sRet)
+		gui.frmTestReport.lbllocation.Caption(V.Local.sRet)  
+
+		f.Intrinsic.Control.If(V.DataTable.DTUserfld(0).USER1!FieldValTrim,=,"X")
+			gui.frmTestReport.chkRP.Value(1)
+			v.Global.chkType.Set("1")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER2!FieldValTrim,=,"X")
+			gui.frmTestReport.chkRPDA.Value(1)
+			v.Global.chkType.Set("2")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER3!FieldValTrim,=,"X")
+			gui.frmTestReport.chkRPDA2.Value(1)
+			v.Global.chkType.Set("3")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER4!FieldValTrim,=,"X")
+			gui.frmTestReport.chkDC.Value(1)
+			v.Global.chkType.Set("4")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER5!FieldValTrim,=,"X")
+			gui.frmTestReport.chkDCDA.Value(1)
+			v.Global.chkType.Set("5")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER6!FieldValTrim,=,"X")
+			gui.frmTestReport.chkDCDA2.Value(1)
+			v.Global.chkType.Set("6")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER7!FieldValTrim,=,"X")
+			gui.frmTestReport.chkPVP.Value(1)
+			v.Global.chkType.Set("7")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER8!FieldValTrim,=,"X")
+			gui.frmTestReport.chkSVB.Value(1)
+			v.Global.chkType.Set("8")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER9!FieldValTrim,=,"X")
+			gui.frmTestReport.chkAVB.Value(1)
+			v.Global.chkType.Set("9")
+		f.Intrinsic.Control.ElseIf(V.DataTable.DTUserfld(0).USER10!FieldValTrim,=,"X")
+			gui.frmTestReport.chkAG.Value(1)
+			v.Global.chkType.Set("10")
+		f.Intrinsic.Control.EndIf
+
+'	f.Intrinsic.String.IsInString(V.DataTable.DTUserfld(0).USER24!FieldValTrim,"HAZARD",True,V.Local.bRet)
+'	f.Intrinsic.Control.If(V.Local.bRet,=,True)
+'		gui.frmTestReport.chkHazard.Value(1)
+'	f.Intrinsic.Control.else
+		f.Intrinsic.String.IsInString(V.DataTable.DTUserfld(0).USER24!FieldValTrim,"PREMISE",True,V.Local.bRet)
+		f.Intrinsic.Control.If(V.Local.bRet,=,True)
+			gui.frmTestReport.chkPremiseIso.Value(1)
+			v.Global.chkType24.Set("chkPremiseIso")
+		f.Intrinsic.Control.else
+			f.Intrinsic.String.IsInString(V.DataTable.DTUserfld(0).USER24!FieldValTrim,"IRRI",True,V.Local.bRet)
+			f.Intrinsic.Control.If(V.Local.bRet,=,True)
+				gui.frmTestReport.chkIrrigation.Value(1)
+				v.Global.chkType24.Set("chkIrrigation")
+			f.Intrinsic.Control.else
+				f.Intrinsic.String.IsInString(V.DataTable.DTUserfld(0).USER24!FieldValTrim,"FIRE",True,V.Local.bRet)
+				f.Intrinsic.Control.If(V.Local.bRet,=,True)
+					gui.frmTestReport.chkFiresystem.Value(1)
+					v.Global.chkType24.Set("chkFiresystem")
+				f.Intrinsic.Control.Else
+					f.Intrinsic.String.IsInString(V.DataTable.DTUserfld(0).USER24!FieldValTrim,"BOILER",True,V.Local.bRet)
+					f.Intrinsic.Control.If(V.Local.bRet,=,True)
+						gui.frmTestReport.chkBoiler.Value(1)
+						v.Global.chkType24.Set("chkBoiler")
+					f.Intrinsic.Control.Elseif(V.DataTable.DTUserfld(0).USER24!FieldValTrim,<>,"")
+						gui.frmTestReport.chkOther.Value(1)
+						v.Global.chkType24.Set(V.DataTable.DTUserfld(0).USER24!FieldValTrim)
+						gui.frmTestReport.txtother.Text(V.DataTable.DTUserfld(0).USER24!FieldValTrim)
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.EndIf 
+		f.Intrinsic.Control.EndIf 
+'	f.Intrinsic.Control.EndIf 
+
+'	f.Intrinsic.Control.If(V.DataTable.DTUserfld(0).USER24!FieldValTrim,=,"X")
+'	
+'	f.Intrinsic.Control.elseIf(V.DataTable.DTUserfld(0).USER24!FieldValTrim,=,"X")
+'	
+'	f.Intrinsic.Control.elseIf(V.DataTable.DTUserfld(0).USER24!FieldValTrim,=,"X")
+'	
+'	f.Intrinsic.Control.elseIf(V.DataTable.DTUserfld(0).USER24!FieldValTrim,=,"X")
+'	
+'	f.Intrinsic.Control.EndIf 
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.Msgbox("User Field Data not found, Cannot Print Test Report")
+		gui.frmTestReport.cmdTestReportPrint.Visible(false)  
+	f.Intrinsic.Control.EndIf 
+	f.Data.DataTable.Close("DTUserfld")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Read_Userfields_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Read_Userfields.End
+
+Program.Sub.SelectOrderLine.Start
+F.Intrinsic.Control.SetErrorHandler("SelectOrderLine_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+variable.local.sTitles.Declare
+variable.local.sWidths.Declare
+Variable.local.sRet.Declare
+Variable.Local.sSql.Declare
+v.Local.sOrder.Declare
+v.Local.sTemp.Declare
+v.Local.bGroup.Declare
+
+f.Intrinsic.String.LPad(v.Args.ORDNO,"0",7,v.Local.sOrder)
+
+Function.Intrinsic.String.Split("Order NO*!*Line*!*Parts","*!*",variable.local.sTitles)
+Function.Intrinsic.String.Split("800*!*800*!*800","*!*",variable.local.sWidths)
+
+f.Intrinsic.Control.If(v.Global.sMode,=,"HIS")
+	f.Intrinsic.String.Build("select order_no,Order_Line,Part from ORDER_HIST_LINE  where order_no = '{0}'",v.Local.sOrder,Variable.Local.sSql)
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("select order_no,record_no,Part from v_order_lines  where order_no = '{0}'",v.Local.sOrder,Variable.Local.sSql)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+Function.Intrinsic.UI.Browser("Select a part","con",Variable.Local.sSql,Variable.Local.sTitles,Variable.Local.sWidths,10000,11000,Variable.local.sRet)
+Function.Intrinsic.Control.If(Variable.local.sRet,"=","***CANCEL***")
+ 	Function.Intrinsic.UI.Msgbox("No Line no was selected!")
+	f.Intrinsic.Control.CallSub(frmmaint_unload)
+Function.Intrinsic.Control.Else
+ 	Function.Intrinsic.String.Split(Variable.local.sRet,"*!*",Variable.local.sRet)
+ 	gui.frmTestReport.lblserial.Caption(Variable.local.sRet(2).Trim)
+
+	f.Intrinsic.Control.CallSub(read_userfields,"SerialPart",Variable.local.sRet(2))
+	'shiptpaddress
+	
+	f.Intrinsic.Control.If(v.Global.sMode,=,"HIS")
+'		f.Intrinsic.String.Build("{0} {1} {2}",Variable.Passed.000014,Variable.Passed.000016,Variable.Passed.000102,v.Local.sTemp)
+		'Removed ShipTo address name
+		f.Intrinsic.String.Build("{0} {1}",Variable.Passed.000016,Variable.Passed.000102,v.Local.sTemp)
+	f.Intrinsic.Control.Else
+'		f.Intrinsic.String.Build("{0} {1} {2} {3}, {4} {5}",Variable.Passed.000008,Variable.Passed.000010,Variable.Passed.000016,Variable.Passed.000017,Variable.Passed.000018,Variable.Passed.000020,v.Local.sTemp)
+		'Removed ShipTo address name
+		f.Intrinsic.String.Build("{0} {1} {2}, {3} {4}",Variable.Passed.000010,Variable.Passed.000016,Variable.Passed.000017,Variable.Passed.000018,Variable.Passed.000020,v.Local.sTemp)
+	f.Intrinsic.Control.EndIf
+	gui.frmTestReport.lblPreventeradd.Caption(v.Local.sTemp)
+
+	'Billing Address
+	f.Intrinsic.Control.CallSub(getaddress,"OrderNUM",Variable.local.sRet(0).Trim)
+
+	f.Intrinsic.Control.CallSub(Get_BackflowData,"OrderNUM",Variable.local.sRet(0).Trim,"OrdLine",Variable.local.sRet(1).Trim)
+
+	'used for Printing Test Report
+	v.Global.sOrder.Set(Variable.local.sRet(0).Trim)
+	v.Global.sLine.Set(Variable.local.sRet(1).Trim)
+	f.Intrinsic.Control.CallSub(readcompanyopt)
+	'User Permission
+	f.Global.Security.IsInGroup(v.Caller.User,"TESTREPO",v.Local.bGroup)
+	f.Intrinsic.Control.If(v.Local.bGroup,=,False)
+		gui.frmTestReport.cmdTestReportsave.Enabled(false)
+	f.Intrinsic.Control.EndIf
+
+
+
+Function.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("SelectOrderLine_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.SelectOrderLine.End
+
+Program.Sub.GetAddress.Start
+F.Intrinsic.Control.SetErrorHandler("GetAddress_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSql.Declare(String)
+v.Local.sOrder.Declare(String)
+v.Local.bRet.Declare(Boolean)
+
+'Billtoaddress
+
+'f.Intrinsic.String.LPad(Variable.Passed.000003,"0",7,v.Local.sOrder)
+f.Intrinsic.String.LPad(v.Args.OrderNUM,"0",7,v.Local.sOrder)
+
+
+F.Intrinsic.Control.Label("ReLoad")
+
+
+f.Intrinsic.Control.If(v.Global.sMode,=,"HIS")
+	f.Intrinsic.String.Build("select Name,AD.Address1,AD.city,AD.State,AD.zip,AD.Country,main_tel,contact_name,contact_Tel,AD.cust as Cust from ORDER_HIST_HEAD Hdr join GCG_4954_BFLink BL on Hdr.order_no = BL.order_no join GCG_4954_BFAddress AD on AD.cust = Hdr.customer and AD.ID = BL.ID where BL.order_no =  '{0}'",v.Local.sOrder,V.Local.sSql)
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("select Name,Address1,city,State,zip,Country,main_tel,contact_name,contact_Tel,AD.cust as Cust from v_order_header Hdr join GCG_4954_BFLink BL on Hdr.order_no = BL.order_no join GCG_4954_BFAddress AD on AD.cust = Hdr.customer and AD.ID = BL.ID where BL.order_no =  '{0}'",v.Local.sOrder,V.Local.sSql)
+f.Intrinsic.Control.endif
+
+f.Data.DataTable.CreateFromSQL("DTADD","Con",v.Local.sSQL)
+f.Intrinsic.Control.If(V.DataTable.DTADD.RowCount,>,0)
+	v.Global.sCustno.Set(V.DataTable.DTADD(0).Cust!fieldvaltrim)
+	gui.frmTestReport.lblPropertyName.Caption(V.DataTable.DTADD(0).Name!fieldvaltrim)
+	gui.frmTestReport.lblPropertyadd1.Caption(V.DataTable.DTADD(0).Address1!fieldvaltrim)
+	gui.frmTestReport.lblPropertycity.Caption(V.DataTable.DTADD(0).city!fieldvaltrim)
+	gui.frmTestReport.lblPropertyState.Caption(V.DataTable.DTADD(0).State!fieldvaltrim)
+	gui.frmTestReport.lblPropertyZip.Caption(V.DataTable.DTADD(0).zip!fieldvaltrim)
+	gui.frmTestReport.lblPropertyPh.Caption(V.DataTable.DTADD(0).main_Tel!fieldvaltrim)
+	gui.frmTestReport.lblcontactphone.Caption(V.DataTable.DTADD(0).contact_Tel!fieldvaltrim)
+	gui.frmTestReport.lblcontactname.Caption(V.DataTable.DTADD(0).contact_name!fieldvaltrim)
+	v.Local.bRet.Set(False)
+f.Intrinsic.Control.Else
+	f.Intrinsic.Control.If(v.Local.bRet,=,False)
+		f.Intrinsic.String.Build("Insert Into GCG_4954_BFLink Values('{0}',0)",v.Local.sOrder,v.Local.sSQL)
+		Function.ODBC.Connection!con.Execute(v.Local.sSQL)
+		f.Data.DataTable.Close("DTADD")
+		v.Local.bRet.Set(True)
+		'create addess link and reload the address
+		f.Intrinsic.Control.GoTo("ReLoad")
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.Msgbox("Address Not found, please add new address")
+		f.Intrinsic.Control.End 
+	f.Intrinsic.Control.EndIf 
+f.Intrinsic.Control.EndIf 
+f.Data.DataTable.Close("DTADD")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GetAddress_Err")
+
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,=,20004)
+	f.Intrinsic.UI.Msgbox("Address Not found, please add new address")
+	f.Intrinsic.Control.End 
+F.Intrinsic.Control.elseIf(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GetAddress.End
+
+Program.Sub.chkInitialTestPassed_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+'gui.frmTestReport.chkIntial_TestStatusFailed.Value(0)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkInitialTestPassed_Click.End
+
+Program.Sub.chkInitialTestFailed_Click.Start
+F.Intrinsic.Control.SetErrorHandler("chkInitialTestPassed_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+'gui.frmTestReport.chkIntial_TestStatusPassed.Value(0)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkInitialTestPassed_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkInitialTestFailed_Click.End
+
+Program.Sub.Get_BackflowData.Start
+F.Intrinsic.Control.SetErrorHandler("Get_BackflowData_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSql.Declare(String)
+v.Local.sOrder.Declare(String)
+
+
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+f.Intrinsic.String.Build("select * from GCG_4954_BFData where order_no =  '{0}' and order_line = '{1}'",v.Args.OrderNUM,v.Args.OrdLine,V.Local.sSql)
+
+f.Data.DataTable.CreateFromSQL("DTBFData","Con",v.Local.sSQL,True)
+f.Intrinsic.Control.If(V.DataTable.DTBFData.RowCount,>,0)
+
+	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Status!fieldvaltrim,=,"EXISTING")
+		gui.frmTestReport.chkExisting.Value(1)
+		gui.frmTestReport.chkNew.Value(0)
+		gui.frmTestReport.chkReplaced.Value(0)
+		gui.frmTestReport.chkRemoved.Value(0)
+	f.Intrinsic.Control.elseIf(V.DataTable.DTBFData(0).BF_Status!fieldvaltrim,=,"NEW")
+		gui.frmTestReport.chkNew.Value(1)
+		gui.frmTestReport.chkExisting.Value(0)
+		gui.frmTestReport.chkReplaced.Value(0)
+		gui.frmTestReport.chkRemoved.Value(0)
+	f.Intrinsic.Control.elseIf(V.DataTable.DTBFData(0).BF_Status!fieldvaltrim,=,"REPLACED")
+		gui.frmTestReport.chkReplaced.Value(1)
+		gui.frmTestReport.chkExisting.Value(0)
+		gui.frmTestReport.chkNew.Value(0)
+		gui.frmTestReport.chkRemoved.Value(0)
+	f.Intrinsic.Control.elseIf(V.DataTable.DTBFData(0).BF_Status!fieldvaltrim,=,"REMOVED")
+		gui.frmTestReport.chkRemoved.Value(1)
+		gui.frmTestReport.chkExisting.Value(0)
+		gui.frmTestReport.chkNew.Value(0)
+		gui.frmTestReport.chkReplaced.Value(0)
+	f.Intrinsic.Control.EndIf 
+
+	gui.frmTestReport.txtIntial_PressDrop.Text(V.DataTable.DTBFData(0).BF_Intial_PressDrop!fieldval)         
+	gui.frmTestReport.txtIntial_OpenedAt.Text(V.DataTable.DTBFData(0).BF_Intial_OpenedAt!fieldval)
+
+'	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Intial_RStatus!fieldval,=,True)            
+'		gui.frmTestReport.chkIntial_RStatusPassed.Value(1)
+'	 	gui.frmTestReport.chkIntial_RStatusFailed.Value(0)
+'	f.Intrinsic.Control.else 
+'		gui.frmTestReport.chkIntial_RStatusFailed.Value(1)
+'		gui.frmTestReport.chkIntial_RStatusPassed.Value(0)
+'	f.Intrinsic.Control.endif
+	
+
+	gui.frmTestReport.chkIntial_RStatusPassed.Value(V.DataTable.DTBFData(0).BF_INTIAL_RSTATUS!fieldval)  
+	gui.frmTestReport.chkIntial_RStatusFailed.Value(V.DataTable.DTBFData(0).BF_INTIAL_RSTATUSF!fieldval)  
+
+
+	 gui.frmTestReport.chkIntial_doublecheck1.Value(V.DataTable.DTBFData(0).BF_Intial_DblCheck1!fieldval)   
+
+
+'	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Intial_DblTigLek!fieldval,=,True)    
+'	 	gui.frmTestReport.chkIntial_DblTight1.Value(1) 
+'		gui.frmTestReport.chkIntial_DblLeaked1.Value(0)   
+'	f.Intrinsic.Control.else
+'		gui.frmTestReport.chkIntial_DblLeaked1.Value(1)  
+'		gui.frmTestReport.chkIntial_DblTight1.Value(0)  
+'	f.Intrinsic.Control.endif
+	gui.frmTestReport.chkIntial_DblTight1.Value(V.DataTable.DTBFData(0).BF_Intial_DblTigLek!fieldval) 
+	gui.frmTestReport.chkIntial_DblLeaked1.Value(V.DataTable.DTBFData(0).BF_Intial_DblTLF!fieldval)  
+
+'	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Intial_DblTigLek2!fieldval,=,True)    
+'	 	gui.frmTestReport.chkIntial_DblTight2.Value(1)  
+'		gui.frmTestReport.chkIntial_DblLeaked2.Value(0)
+'	f.Intrinsic.Control.else
+'		gui.frmTestReport.chkIntial_DblLeaked2.Value(1)  
+'		gui.frmTestReport.chkIntial_DblTight2.Value(0)
+'	f.Intrinsic.Control.endif
+
+	gui.frmTestReport.chkIntial_DblTight2.Value(V.DataTable.DTBFData(0).BF_Intial_DblTigLek2!fieldval)  
+	gui.frmTestReport.chkIntial_DblLeaked2.Value(V.DataTable.DTBFData(0).BF_Intial_DblTL2F!fieldval)
+	
+	 gui.frmTestReport.txtIntial_DblType1.Text(V.DataTable.DTBFData(0).BF_Intial_DblType1!fieldval)               
+	 gui.frmTestReport.txtIntial_DblType2.Text(V.DataTable.DTBFData(0).BF_Intial_DblType2!fieldval)
+
+
+	 gui.frmTestReport.txtIntial_AirInlet.Text(V.DataTable.DTBFData(0).BF_Intial_AirInlet!fieldval)               
+	 gui.frmTestReport.txtIntial_CheckValue.Text(V.DataTable.DTBFData(0).BF_Intial_CheckValue!fieldval)  
+
+'	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Intial_Opened!fieldval,=,True)    
+'	 	gui.frmTestReport.chkIntial_Opdfully.Value(1)  
+'		gui.frmTestReport.chkIntial_DidnotOpen.Value(0)
+'	f.Intrinsic.Control.else
+'		gui.frmTestReport.chkIntial_DidnotOpen.Value(1) 
+'		gui.frmTestReport.chkIntial_Opdfully.Value(0)   
+'	f.Intrinsic.Control.endif
+
+	gui.frmTestReport.chkIntial_Opdfully.Value(V.DataTable.DTBFData(0).BF_Intial_Opened!fieldval)  
+	gui.frmTestReport.chkIntial_DidnotOpen.Value(V.DataTable.DTBFData(0).BF_Intial_DidnotOpen!fieldval)  
+
+	 gui.frmTestReport.chkIntial_PV_Status.Value(V.DataTable.DTBFData(0).BF_Intial_PV_Status!fieldval)   
+
+	f.Intrinsic.Control.If(V.DataTable.DTBFData(0).BF_Intial_TestStatus!fieldval,=,True)
+		gui.frmTestReport.chkIntial_TestStatusPassed.Value(1)
+		gui.frmTestReport.chkIntial_TestStatusFailed.Value(0) 
+	f.Intrinsic.Control.else	
+		gui.frmTestReport.chkIntial_TestStatusFailed.Value(1)  
+		gui.frmTestReport.chkIntial_TestStatusPassed.Value(0)  
+	f.Intrinsic.Control.endif
+
+	 gui.frmTestReport.dtIntial_TestDate.Value(V.DataTable.DTBFData(0).BF_Intial_TestDate!fieldval)   
+	 gui.frmTestReport.txtIntial_SystemPSI.Text(V.DataTable.DTBFData(0).BF_Intial_SystemPSI!fieldval)              
+	 gui.frmTestReport.txtIntial_DeteMeter.Text(V.DataTable.DTBFData(0).BF_Intial_DeteMeter!fieldval)              
+	 gui.frmTestReport.txtRepairNotes.Text(V.DataTable.DTBFData(0).BF_RepairNotes!fieldval)   
+
+
+
+	 gui.frmTestReport.txtRepair_PressDrop.Text(V.DataTable.DTBFData(0).BF_Repair_PressDrop!fieldval)              
+	 gui.frmTestReport.txtRepair_OpenedAt.Text(V.DataTable.DTBFData(0).BF_Repair_OpenedAt!fieldval)    
+
+
+	gui.frmTestReport.chkRepair_RStatusPassed.Value(V.DataTable.DTBFData(0).BF_Repair_RStatusP!fieldval)  
+	gui.frmTestReport.chkRepair_RStatusFailed.Value(V.DataTable.DTBFData(0).BF_Repair_RStatusF!fieldval) 
+	
+
+	 gui.frmTestReport.chkRepair_DblCheck1.Value(V.DataTable.DTBFData(0).BF_Repair_DblCheck1!fieldval)   
+	 gui.frmTestReport.chkRepair_DblTight1.Value(V.DataTable.DTBFData(0).BF_Repair_DblTight1!fieldval)   
+	 gui.frmTestReport.chkRepair_DblTight2.Value(V.DataTable.DTBFData(0).BF_Repair_DblTight2!fieldval)   
+	 gui.frmTestReport.txtRepair_DblType1.Text(V.DataTable.DTBFData(0).BF_Repair_DblType1!fieldval)               
+	 gui.frmTestReport.txtRepair_DblType2.Text(V.DataTable.DTBFData(0).BF_Repair_DblType2!fieldval)               
+	 gui.frmTestReport.txtRepair_AirInlet.Text(V.DataTable.DTBFData(0).BF_Repair_AirInlet!fieldval)               
+	 gui.frmTestReport.txtRepair_CheckValue.Text(V.DataTable.DTBFData(0).BF_Repair_CheckValue!fieldval)             
+	 gui.frmTestReport.chkRepair_Opdfully.Value(V.DataTable.DTBFData(0).BF_Repair_Opdfully!fieldval)   
+
+	 gui.frmTestReport.chkRepair_TestStatus.Value(V.DataTable.DTBFData(0).BF_Repair_TestStatus!fieldval)   
+
+	 gui.frmTestReport.txtRepair_TestDate.text(V.DataTable.DTBFData(0).BF_Repair_TestDate!fieldval)   
+
+'	Function.Intrinsic.Date.ConvertDString(v.passed.ENDDATE,"YYYY/MM/DD", variable.local.rDate)
+
+'	V.Local.sSql.Declare(String)
+
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+'
+'	Function.Intrinsic.Date.ConvertDString(V.DataTable.DTBFData(0).BF_Repair_TestDate!fieldval,"DD/MM/YYYY".variable.local.rDate)
+
+
+
+	 gui.frmTestReport.chkWaterRestored.Value(V.DataTable.DTBFData(0).BF_WaterRestored!fieldval)   
+	 
+	 gui.frmTestReport.lblTesterCert.Text(V.DataTable.DTBFData(0).BF_TesterCert!fieldval)
+
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+
+	f.Intrinsic.Control.CallSub(get_employee,"EmployeeNo",v.DataTable.DTBFData(0).BF_Employee!fieldval)
+
+
+
+f.Intrinsic.Control.Else
+'	f.Data.DataTable.AddRow("DTAdd","ID",0,"Order_no",v.Local.sOrder)
+'	v.Args.OrderNUM,v.Args.OrdLine
+	f.Data.DataTable.AddRow("DTBFData","Order_no",v.Args.OrderNUM,"Order_Line",v.Args.OrdLine,"BF_Cust",v.Global.sCustno)
+	gui.frmTestReport.cmdTestReportPrint.Enabled(False)
+	f.Intrinsic.Control.CallSub(get_employee,"EmployeeNo","")
+f.Intrinsic.Control.EndIf 
+'f.Data.DataTable.Close("DTBFData")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Get_BackflowData_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Get_BackflowData.End
+
+Program.Sub.cmdTestReportsave_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'
+'F.Intrinsic.Debug.InvokeDebugger
+
+'F.Intrinsic.Debug.Stop
+
+
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkRP.Value,=,1)
+'		f.Intrinsic.Control.If(v.Screen.frmTestReport!txtIntial_PressDrop.text,=,"")
+'			f.Intrinsic.UI.Msgbox("Invalid Data")
+'			gui.frmTestReport.txtIntial_PressDrop.SetFocus
+'			f.Intrinsic.Control.ExitSub
+'		f.Intrinsic.Control.elseIf(v.Screen.frmTestReport!txtIntial_OpenedAt.text,=,"")
+'			f.Intrinsic.UI.Msgbox("Invalid Data")
+'			gui.frmTestReport.txtIntial_OpenedAt.SetFocus
+'			f.Intrinsic.Control.ExitSub
+'		f.Intrinsic.Control.EndIf
+'	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.CallSub(Create_Screenshot)
+	
+	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkExisting.Value,=,1)
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Status","EXISTING")
+	f.Intrinsic.Control.elseIf(v.Screen.frmTestReport!chkNew.Value,=,1)
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Status","NEW")
+	f.Intrinsic.Control.elseIf(v.Screen.frmTestReport!chkReplaced.Value,=,1)
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Status","REPLACED")
+	f.Intrinsic.Control.elseIf(v.Screen.frmTestReport!chkRemoved.Value,=,1)
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Status","REMOVED")
+	f.Intrinsic.Control.EndIf 
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_PressDrop",v.Screen.frmTestReport!txtIntial_PressDrop.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_OpenedAt",v.Screen.frmTestReport!txtIntial_OpenedAt.Text)
+	
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkIntial_RStatusPassed.Value,=,1)            
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_RStatus",True)
+'	f.Intrinsic.Control.else 
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_RStatus",False)
+'	f.Intrinsic.Control.endif
+	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_RStatus",v.Screen.frmTestReport!chkIntial_RStatusPassed.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_RStatusF",v.Screen.frmTestReport!chkIntial_RStatusFailed.Value)
+	
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblCheck1",v.Screen.frmTestReport!chkIntial_doublecheck1.Value)
+
+
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkIntial_DblTight1.Value,=,1)  
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek",True)
+'	f.Intrinsic.Control.else
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek",False)
+'	f.Intrinsic.Control.endif
+'	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek",v.Screen.frmTestReport!chkIntial_DblTight1.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTLF",v.Screen.frmTestReport!chkIntial_DblLeaked1.Value)
+
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkIntial_DblTight2.Value,=,1)  
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek2",True)
+'	f.Intrinsic.Control.else
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek2",False)
+'	f.Intrinsic.Control.endif
+'	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTigLek2",v.Screen.frmTestReport!chkIntial_DblTight2.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblTL2F",v.Screen.frmTestReport!chkIntial_DblLeaked2.Value)
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblType1",v.Screen.frmTestReport!txtIntial_DblType1.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DblType2",v.Screen.frmTestReport!txtIntial_DblType2.Text)
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_AirInlet",v.Screen.frmTestReport!txtIntial_AirInlet.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_CheckValue",v.Screen.frmTestReport!txtIntial_CheckValue.Text)
+
+'
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkIntial_Opdfully.Value,=,1)            
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_Opened",True)
+'	f.Intrinsic.Control.else 
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_Opened",False)
+'	f.Intrinsic.Control.endif
+	
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_Opened",v.Screen.frmTestReport!chkIntial_Opdfully.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DidnotOpen",v.Screen.frmTestReport!chkIntial_DidnotOpen.Value)
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_PV_Status",v.Screen.frmTestReport!chkIntial_PV_Status.Value)
+
+	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkIntial_TestStatusPassed.Value,=,1)            
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_TestStatus",True)
+	f.Intrinsic.Control.else 
+		F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_TestStatus",False)
+	f.Intrinsic.Control.endif
+
+'
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_TestDate",v.Screen.frmTestReport!dtIntial_TestDate.value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_SystemPSI",v.Screen.frmTestReport!txtIntial_SystemPSI.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Intial_DeteMeter",v.Screen.frmTestReport!txtIntial_DeteMeter.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_RepairNotes",v.Screen.frmTestReport!txtRepairNotes.Text)
+'	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_PressDrop",v.Screen.frmTestReport!txtRepair_PressDrop.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_OpenedAt",v.Screen.frmTestReport!txtRepair_OpenedAt.Text)
+''
+'
+'	f.Intrinsic.Control.If(v.Screen.frmTestReport!chkRepair_RStatusPassed.Value,=,1)            
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_RStatus",True)
+'	f.Intrinsic.Control.else 
+'		F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_RStatus",False)
+'	f.Intrinsic.Control.endif
+	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_RStatusP",v.Screen.frmTestReport!chkRepair_RStatusPassed.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_RStatusF",v.Screen.frmTestReport!chkRepair_RStatusFailed.Value)
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_DblCheck1",v.Screen.frmTestReport!chkRepair_DblCheck1.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_DblTight1",v.Screen.frmTestReport!chkRepair_DblTight1.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_DblTight2",v.Screen.frmTestReport!chkRepair_DblTight2.Value)
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_DblType1",v.Screen.frmTestReport!txtRepair_DblType1.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_DblType2",v.Screen.frmTestReport!txtRepair_DblType2.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_AirInlet",v.Screen.frmTestReport!txtRepair_AirInlet.Text)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_CheckValue",v.Screen.frmTestReport!txtRepair_CheckValue.Text) 
+
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_Opdfully",v.Screen.frmTestReport!chkRepair_Opdfully.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_TestStatus",v.Screen.frmTestReport!chkRepair_TestStatus.Value)
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Repair_TestDate",v.Screen.frmTestReport!txtRepair_TestDate.text)
+'
+'
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Serial",v.Screen.frmTestReport!lblserial.caption)
+
+'F.Intrinsic.Debug.Stop
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_Employee",v.Screen.frmTestReport!lblEmployee.caption)  
+
+
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_WaterRestored",v.Screen.frmTestReport!chkWaterRestored.Value) 
+	
+	F.Data.DataTable.SetValue("DTBFData",0,"BF_TesterCert",v.Screen.frmTestReport!lblTesterCert.Caption) 
+
+	Function.Data.DataTable.SaveToDB("DTBFData", "con", "GCG_4954_BFData", "Order_No*!*order_line",256)
+	gui.frmTestReport.cmdTestReportPrint.Enabled(True)
+	f.Intrinsic.UI.Msgbox("Test Report data saved successfully")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdTestReportsave_Click.End
+
+Program.Sub.ReadCompanyOpt.Start
+F.Intrinsic.Control.SetErrorHandler("ReadCompanyOpt_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+v.Local.sRet.Declare(String)
+v.Local.sRet1.Declare(String)
+V.Local.sSQL.Declare(String)
+	'	gui.frmTestReport.lblTesterName
+
+
+	'Get Company Name
+	F.Global.General.ReadOption("130000",1,"","0000",v.Local.sRet)
+	gui.frmTestReport.lblcmpyname.Caption(v.Local.sRet.Trim)
+	'Get Company Address
+	F.Global.General.ReadOption("401939",1,"","0000",v.Local.sRet1)
+	v.Local.sRet.Set(v.Local.sRet1.Trim)
+
+	'Get add2
+	F.Global.General.ReadOption("401940",1,"","0000",v.Local.sRet1)
+	'check for blank address
+	f.Intrinsic.Control.If(v.Local.sRet1.Trim,<>,"")
+		f.Intrinsic.String.Build("{0}, {1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+	f.Intrinsic.Control.endif
+
+	'City
+	F.Global.General.ReadOption("401941",1,"","0003",v.Local.sRet1)
+	f.Intrinsic.String.Build("{0}, {1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+
+	'State
+	F.Global.General.ReadOption("401941",1,"","0004",v.Local.sRet1)
+	f.Intrinsic.String.Build("{0}, {1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+
+	'Zip
+	F.Global.General.ReadOption("401941",1,"","0005",v.Local.sRet1)
+	f.Intrinsic.String.Build("{0} {1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+	gui.frmTestReport.lblTesteradd.Caption(v.Local.sRet.Trim)
+''	attention
+'	F.Global.General.ReadOption("401941",1,"","0008",v.Local.sRet)
+'	gui.frmTestReport.lblcontactname.Caption(v.Local.sRet.Trim) 
+	'area
+	F.Global.General.ReadOption("401941",1,"","0010",v.Local.sRet1)
+
+	v.Local.sRet.Set(v.Local.sRet1.Trim)
+	'PH
+	F.Global.General.ReadOption("401941",1,"","0011",v.Local.sRet1)
+	f.Intrinsic.String.Build("{0}-{1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+	'PH
+	F.Global.General.ReadOption("401941",1,"","0012",v.Local.sRet1)
+	f.Intrinsic.String.Build("{0}-{1}",v.Local.sRet,v.Local.sRet1.trim,v.Local.sRet)
+	gui.frmTestReport.lblcmpyPH.Caption(v.Local.sRet.Trim)
+	'email
+	F.Global.General.ReadOption("401943",1,"","0000",v.Local.sRet)
+	gui.frmTestReport.lblcmpyemail.Caption(v.Local.sRet.Trim)
+
+'	Function.Global.Security.GetFullName(v.Caller.User,v.Local.sRet)
+'	gui.frmTestReport.lblTesterName.Caption(v.Local.sRet)
+'
+'	'EMPID
+'	Function.Global.Security.GetEmpNoFromUser(v.Caller.User,v.Local.sRet)
+'
+'	F.Intrinsic.String.Build("select Date_Hire,comments_1,comments_2,comments_3  from v_employee_mstr where employee = '{0}'",v.Local.sRet,V.Local.sSQL)
+'	F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+'	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)	
+'		gui.frmTestReport.lblTesterCert.Caption(V.ODBC.con!rst.FieldValtrim!comments_3)
+'		gui.frmTestReport.dtpcalibrationdt.value(V.ODBC.con!rst.FieldValtrim!Date_Hire)
+'
+'		gui.frmTestReport.txtguageSN.Text(V.ODBC.con!rst.FieldValtrim!comments_1)                       
+'	 	gui.frmTestReport.txtmakemodel.Text(V.ODBC.con!rst.FieldValtrim!comments_2)
+'		gui.frmTestReport.lblEmployee.Caption(v.Local.sRet)   
+'	f.Intrinsic.Control.Else
+'		f.Intrinsic.UI.Msgbox("Employee information not found")        
+'		gui.frmTestReport.cmdTestReportPrint.Visible(false)         
+'	F.Intrinsic.Control.EndIf
+'	F.ODBC.con!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ReadCompanyOpt_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ReadCompanyOpt.End
+
+Program.Sub.Launch_BFDash.Start
+F.Intrinsic.Control.SetErrorHandler("Launch_BFDash_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSql.Declare(String)
+v.Local.iret.Declare 
+v.Local.i.Declare 
+v.Local.stitle.Declare 
+
+
+gui.frmMaint..size(14130,10830)
+
+
+
+v.Local.sSql.Set("select BL.Order_no + '-' + Order_line 'SalesOrder',BF_Serial,Name, rtrim(Address1) + ', ' + rtrim(city) + ' ' + rtrim(State) + ', ' + rtrim(zip) 'Mailing',Main_Tel,contact_name,rtrim(Name_Customer_Ship) + ', ' + rtrim(Address_1_Ship) + ', ' + rtrim(City_Ship) + ' ' + rtrim(State_Ship) + ', ' + rtrim(Code_Zip_Ship) 'preventer',")
+f.Intrinsic.String.Build(" {0} contact_Tel,USER14,CASE WHEN BF_Intial_TestStatus = 0 THEN 'FAIL' else 'PASSED'  END AS BF_Intial_TestStatus,BF_Intial_TestDate, BF_Close,BL.Order_no,Order_line ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} from GCG_4954_BFLink BL join GCG_4954_BFData BF on BL.order_no = BF.order_no join INV_EXTRA on BF_Serial = INV_EXTRA.Part  ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} join v_order_lines det on BL.order_no = det.order_no and order_line = record_no and INV_EXTRA.location =  det.location join v_order_header Hdr on BL.order_no = Hdr.order_no join GCG_4954_BFAddress AD on AD.cust = BF_Cust and AD.ID = BL.ID ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} join v_ORDER_SHIP_TO shp on hdr.ship_id = shp.ship_id  and hdr.order_no = shp.order_no where BF_Close = 0 ",v.Local.sSql,v.Local.sSql)
+
+F.Intrinsic.Control.If(v.DataTable.DTHook.Exists,=,True)
+F.Data.DataTable.Close("DTHook")
+f.Intrinsic.Control.EndIf 
+
+f.Intrinsic.String.Build(" {0} Union select BL.Order_no + '-' + BF.Order_line 'SalesOrder',BF_Serial,Name, rtrim(AD.Address1) + ', ' + rtrim(AD.city) + ' ' + rtrim(AD.State) + ', ' + rtrim(AD.zip) 'Mailing',Main_Tel,contact_name,rtrim(Ord.Name_Customer_Ship) + ', ' + rtrim(Ord.Address1_Ship) + ', ' + rtrim(Ord.City_Ship) + ' ' + rtrim(Ord.State_Ship) + ', ' + rtrim(Ord.Zip_Ship) 'preventer',",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} contact_Tel,USER14,CASE WHEN BF_Intial_TestStatus = 0 THEN 'FAIL' else 'PASSED'  END AS BF_Intial_TestStatus,BF_Intial_TestDate, BF_Close,BL.Order_no,Order_line ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} from GCG_4954_BFLink BL join GCG_4954_BFData BF on BL.order_no = BF.order_no join INV_EXTRA on BF_Serial = INV_EXTRA.Part ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} join v_order_Hist_line det on BF.order_no = det.order_no and BF.order_line = det.order_line and INV_EXTRA.location =  det.location join v_ORDER_HIST_HEAD ORD on BL.order_no = ORD.order_no join GCG_4954_BFAddress AD on AD.cust = BF_Cust and AD.ID = BL.ID ",v.Local.sSql,v.Local.sSql)
+f.Intrinsic.String.Build(" {0} where BF_Close = 0 ",v.Local.sSql,v.Local.sSql)
+
+F.Data.DataTable.CreateFromSQL("DTHook","Con",v.Local.sSql,True)
+'	
+'v.Local.sSql.Set(" select BL.Order_no + '-' + BF.Order_line 'SalesOrder',BF_Serial,Name, rtrim(AD.Address1) + ', ' + rtrim(AD.city) + ' ' + rtrim(AD.State) + ', ' + rtrim(AD.zip) 'Mailing',Main_Tel,contact_name,rtrim(Ord.Name_Customer_Ship) + ', ' + rtrim(Ord.Address1_Ship) + ', ' + rtrim(Ord.City_Ship) + ' ' + rtrim(Ord.State_Ship) + ', ' + rtrim(Ord.Zip_Ship) 'preventer',")
+'f.Intrinsic.String.Build(" {0} contact_Tel,USER14,CASE WHEN BF_Intial_TestStatus = 0 THEN 'FAIL' else 'PASSED'  END AS BF_Intial_TestStatus,BF_Intial_TestDate, BF_Close,BL.Order_no,Order_line ",v.Local.sSql,v.Local.sSql)
+'f.Intrinsic.String.Build(" {0} from GCG_4954_BFLink BL join GCG_4954_BFData BF on BL.order_no = BF.order_no join INV_EXTRA on BF_Serial = INV_EXTRA.Part ",v.Local.sSql,v.Local.sSql)
+'f.Intrinsic.String.Build(" {0} join v_order_Hist_line det on BF.order_no = det.order_no and BF.order_line = det.order_line and INV_EXTRA.location =  det.location join v_ORDER_HIST_HEAD ORD on BL.order_no = ORD.order_no join GCG_4954_BFAddress AD on AD.cust = BF_Cust and AD.ID = BL.ID ",v.Local.sSql,v.Local.sSql)
+'f.Intrinsic.String.Build(" {0} where BF_Close = 0 ",v.Local.sSql,v.Local.sSql)
+
+'	F.Data.DataTable.CreateFromSQL("DTTemp","Con",v.Local.sSql)
+'	
+'	F.Data.DataTable.Merge("DTTemp","DTHook",False,2)
+'	
+'	F.Data.DataTable.Close("DTTemp")
+
+	F.Data.DataView.Create("DTHook","DVHook",22,"","SalesOrder ASC")
+	
+	gui.frmMaint.GsGridMaint.SuspendLayout 
+
+
+	gui.frmMaint.GsGridMaint.AddGridViewFromDataView("GVHook","DTHook","DVHook")
+
+
+	gui.frmMaint.GsGridMaint.MainView("GVHook")
+
+	gui.frmMaint.GsGridMaint.GetColumnCount("GVHook",v.Local.iret)
+	f.Intrinsic.Math.Sub(v.Local.iret,1,v.Local.iret)
+	f.Intrinsic.Control.For(v.Local.i,0,v.Local.iret,1)
+		gui.frmMaint.GsGridMaint.GetColumnNamebyIndex("GVHook",v.Local.i,v.Local.stitle)
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"AllowEdit",False)
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"ReadOnly",True)
+
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"HeaderFontBold","True")
+		gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "ColumnPanelRowHeight", "25")
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsViewRowAutoHeight", "True")
+'	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook","OptionsViewColumnAutoWidth",False)
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","CellForeColor","Blue")
+
+	gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook", "BF_Close", "tagName1","NotEqual","1")
+	gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook",  "BF_Close", "tagName1", "backcolor", "#D3D3D3")
+
+	gui.frmMaint.GsGridMaint.AddStyleFormatCOndition("GVHook", "BF_Close", "tagName1","NotEqual","1")
+	gui.frmMaint.GsGridMaint.SetStyleFormatCOnditionProperty("GVHook",  "BF_Close", "tagName1", "FontBold", True)
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "order_no", "Visible", False)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "order_line", "Visible", False)
+
+
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","customer","Caption","Customer")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","Caption","Order no")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Serial","Caption","Serial number")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","USER14","Caption","Water supplier")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","Caption","Name")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","mailing","Caption","Mailing address")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","preventer","Caption","Preventer address")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","preventer","Caption","Preventer address")
+
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","city","Caption","city")
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","State","Caption","State")
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","zip","Caption","zip")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","contact_name","Caption","Contact name")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","contact_Tel","Caption","Phone")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestStatus","Caption","Initial Test Result")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestDate","Caption","Test date")
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Close","Caption","Close")
+'
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","customer","MinWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","customer","MaxWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","MinWidth",120)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","MaxWidth",120)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestStatus","MinWidth",120)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestStatus","MaxWidth",120)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestDate","MinWidth",80)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Intial_TestDate","MaxWidth",80)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Close","MinWidth",60)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Close","MaxWidth",60)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Mailing","MinWidth",280)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Mailing","MaxWidth",280)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","preventer","MinWidth",380)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","preventer","MaxWidth",380)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","USER14","MinWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","USER14","MaxWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Serial","MinWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Serial","MaxWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","MinWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","MaxWidth",150)
+
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","contact_Tel","MinWidth",150)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","contact_Tel","MaxWidth",150)
+	'contact_Tel
+'
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","AllowEdit",False)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","Name","ReadOnly",True)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","AllowEdit",False)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","SalesOrder","ReadOnly",True)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Status","AllowEdit",False)
+'	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Status","ReadOnly",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Close","AllowEdit",True)
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook","BF_Close","ReadOnly",False)
+
+	gui.frmMaint.GsGridMaint.SetColumnProperty("GVHook", "BF_Intial_TestDate", "DisplayCustomDatetime", "d")
+
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsSelectionEnableAppearanceFocusedRow", "False") 
+	
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "Showgrouppanel",True) 
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsViewShowGroupPanel", True) 
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "OptionsFindAlwaysVisible", True) 
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "AllowFilter", True) 
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "Enableappearanceevenrow", True) 
+	gui.frmMaint.GsGridMaint.SetGridViewProperty("GVHook", "AllowSort", True) 
+	
+
+	gui.frmMaint.GsGridMaint.ResumeLayout 
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Launch_BFDash_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Launch_BFDash.End
+
+Program.Sub.cmdTestReportPrint_Click.Start
+F.Intrinsic.Control.SetErrorHandler("LaunchMaint_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.local.iBiRunID.Declare(long)
+V.local.iBILogID.Declare(long)
+V.Local.sRet.Declare(String)
+V.Local.sParams.Declare(String)
+V.Local.sValues.Declare(String)
+V.Local.iRet.Declare(long)
+V.Local.sRptName.Declare(String)
+V.Local.iRptid.Declare(long)
+v.Local.sOrder.Declare 
+v.Local.sfile.Declare 
+V.Local.iHandle.Declare 
+v.Local.sSignature.Declare 
+v.Local.sUser.Declare
+
+'OrderNUM",Variable.local.sRet(0).Trim,"OrdLine
+
+'
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+Function.Intrinsic.UI.InvokeWaitDialog("Printing Test Report please wait ...")
+Function.Intrinsic.Control.BlockEvents
+
+
+F.Global.BI.GetRunID(V.local.iBIRunID)
+F.Global.BI.GetIDFromName("GCG_4954_TestReport.rpt",V.Local.iRptid)
+F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptid,0,"",V.Local.iBILogID)
+
+F.Global.BI.StopLogging(V.local.iBILogID)
+
+
+f.Intrinsic.String.LPad(Variable.Passed.000003,"0",7,v.Local.sOrder)
+'\\WMWGSSDB\apps\global\Busint\custom\signature\SUPERVSR.jpeg
+'F.Intrinsic.Debug.InvokeDebugger
+
+'F.Intrinsic.Debug.Stop
+
+Function.Global.Security.GetUserFromEMPNo(v.Screen.frmTestReport!lblEmployee.caption,v.Local.sUser)
+
+
+f.Intrinsic.String.Build("{0}\custom\signature\{1}.jpg",v.Caller.BusintDir,v.Local.sUser,v.Local.sSignature)
+
+V.Local.sParams.Set("order_no*!*order_line*!*TesterPH*!*TesterName*!*TesterCert*!*TestercmpyEmail*!*Testercmpyname*!*Testeradd*!*PrevAddress*!*Signature")
+
+F.Intrinsic.String.Build("{0}*!*{1}*!*{2}*!*{3}*!*{4}*!*{5}*!*{6}*!*{7}*!*{8}*!*{9}",v.Global.sOrder,v.Global.sLine,v.Screen.frmTestReport!lblcmpyPH.Caption,v.Screen.frmTestReport!lblTesterName.Caption,v.Screen.frmTestReport!lblTesterCert.text,v.Screen.frmTestReport!lblcmpyemail.Caption,v.Screen.frmTestReport!lblcmpyname.Caption,v.Screen.frmTestReport!lblTesteradd.Caption,v.Screen.frmTestReport!lblPreventeradd.Caption,v.Local.sSignature,V.Local.sValues)
+
+
+'V.Local.sParams.Set("order_no*!*order_line*!*TesterPH*!*TesterName*!*TesterCert*!*TestercmpyEmail*!*Testercmpyname*!*Testeradd*!*PrevAddress*!*Signature*!*chkType*!*chkType24")
+
+'F.Intrinsic.String.Build("{0}*!*{1}*!*{2}*!*{3}*!*{4}*!*{5}*!*{6}*!*{7}*!*{8}*!*{9}",v.Global.sOrder,v.Global.sLine,v.Screen.frmTestReport!lblcmpyPH.Caption,v.Screen.frmTestReport!lblTesterName.Caption,v.Screen.frmTestReport!lblTesterCert.text,v.Screen.frmTestReport!lblcmpyemail.Caption,v.Screen.frmTestReport!lblcmpyname.Caption,v.Screen.frmTestReport!lblTesteradd.Caption,v.Screen.frmTestReport!lblPreventeradd.Caption,v.Local.sSignature,V.Local.sValues,v.Global.chkType,v.Global.chkType24)
+
+
+'F.Global.BI.RunReportPreProcessor(V.local.iBiRunID,V.local.iBILogID,V.Local.sParams,V.Local.sValues,"",-1,True,"",-1,"",0,"","",V.Local.iRet)
+
+
+'
+f.Intrinsic.String.Build("{0}\TestReport.pdf",v.Caller.LocalGSSTempDir,v.Local.sfile)
+F.Global.BI.RunReportPreProcessor(V.local.iBiRunID,V.local.iBILogID,V.Local.sParams,V.Local.sValues,"",4,True,"",-1,"",0,v.Local.sfile,"",V.Local.iRet)
+
+'f.Intrinsic.String.Build("{0}\1.txt",v.Caller.LocalGSSTempDir,v.Local.sfile)
+F.Intrinsic.Task.ShellExec(V.Local.iHandle,"Open",v.Local.sfile,"","",1)
+
+Function.Intrinsic.UI.CloseWaitDialog
+Function.Intrinsic.Control.UnBlockEvents
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LaunchMaint_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.Control.UnBlockEvents
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.CallSub(frmmaint_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdTestReportPrint_Click.End
+
+Program.Sub.ExportData.Start
+F.Intrinsic.Control.SetErrorHandler("ExportData_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Variable.Local.sFile.Declare(String)
+Variable.Local.sDir.Declare(String)
+V.Local.sExcel.Declare 
+
+V.Local.sFldname.Declare 
+V.Local.sDtype.Declare 
+
+F.Intrinsic.String.Build("{0}\Select File",V.Caller.FilesDir,V.Local.sDir)
+Function.Intrinsic.UI.ShowOpenFileDialog("","csv|xls|xlsx",V.Local.sDir,V.Local.sFile)
+Function.Intrinsic.Control.If(V.Local.sFile,<>,"***CANCEL***")
+	Gui.SS_Form_File.txt_FileSelection.Text(V.Local.sFile)
+Function.Intrinsic.Control.EndIf
+
+
+
+
+
+
+'F.Intrinsic.Debug.InvokeDebugger
+
+F.Intrinsic.File.File2String(V.Local.sFile,V.Local.sExcel)
+
+'Spliting to CSV to take care of Comma
+Function.Intrinsic.String.SPLITCSV(V.Local.sExcel,V.Local.sExcel)
+Function.Intrinsic.String.Join(V.Local.sExcel,"||",V.Local.sExcel)
+
+'
+'F.Intrinsic.Debug.Stop
+''f.Data.DataTable.CreateFromString("Import1",v.Local.sExcel,"PART_NO*!*LOC*!*QTY*!*REF*!*LOT*!*BIN*!*HEAT*!*SERIAL*!*Order_U1*!*SalePrice_U2*!*StoredDate_U3*!*Status_U4*!*Invoice_U5*!*DescriptionUser_U6*!*Ship_U7*!*ShipDate_U8*!*Reason_U9","String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String","||",v.ambient.newline,True)
+''Cust	Name	Address1	City	State	Zip	Contact_Name	Contact_Email	ID
+
+F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass,500)
+f.Data.DataTable.CreateFromString("Import1",v.Local.sExcel,"Cust*!*Name*!*Address1*!*Address2*!*City*!*Zip*!*State*!*Country*!*Main_Tel*!*Contact_Name*!*Contact_Title*!*Contact_Tel*!*Comments*!*Contact_Email*!*ID","String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String","||",v.ambient.newline,True)
+
+'V.Local.sFldname.Set("Autonum*!*PO*!*PO_Line*!*Receiver*!*VENDOR*!*Name_Vendor*!*Part*!*LOC*!*DESCRIPTION*!*Lot*!*InventoryNumber*!*Bin*!*Serial*!*MTRLink*!*GRADE*!*THICKNESS*!*WIDTH*!*LENGTH*!*TheoreticalWeight*!*ActualWeight*!*CostLB*!*FreightLB*!*TOTALCOSTLB*!*TOTALCOST*!*Mill*!*CarTruck*!*BARGENO*!*LocationNo*!*WHSELOC*!*CE*!*C*!*MN*!*P*!*S*!*SI*!*CU*!*NI*!*CR*!*MO*!*SN*!*AL*!*TI*!*V*!*CB*!*SLAB*!*Job*!*Salesman*!*ForeignDomestic*!*Testing*!*Notes*!*LastDateTime*!*LastUser*!*Allocated*!*Validate*!*Save*!*Wait*!*OverWrite")
+'V.Local.sDtype.Set("string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string")
+
+'V.Local.sFldname.Set("Autonum*!*PO*!*PO_Line*!*Receiver*!*VENDOR*!*Name_Vendor*!*Part*'!*LOC*!*DESCRIPTION*!*Lot*!*InventoryNumber")
+'V.Local.sDtype.Set("string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string")
+
+'V.Local.sFldname.Set("Autonum*!*PO*!*PO_Line*!*Receiver*!*VENDOR*!*Name_Vendor*!*Part*!*LOC*!*DESCRIPTION*!*Lot*!*InventoryNumber*!*Bin*!*Serial*!*MTRLink*!*GRADE*!*THICKNESS")
+'V.Local.sDtype.Set("string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string")
+
+
+
+f.Data.DataTable.CreateFromString("Import1",v.Local.sExcel,V.Local.sFldname,V.Local.sDtype,"||",v.ambient.newline,True)
+
+
+''F.Data.DataTable.DeleteRow("Import1",3)
+
+f.Data.DataView.Create("Import1","DVHdrHook",22,"Cust<>''","")
+'f.Data.DataView.Create("Import1","DVHdrHook",22,"Autonum<>''","")
+f.Data.DataView.ToDataTable("Import1","DVHdrHook","DTHdrSave")
+F.Intrinsic.Debug.Stop
+F.Data.DataTable.SaveToDB("DTHdrSave","con","GCG_4954_BFAddress","Cust*!*ID",256)
+'F.Data.DataTable.SaveToDB("DTHdrSave","con","GCG_4729_Part_Dim","Autonum",256)
+'F.Data.DataTable.SaveToDB("DTHdrSave","con","GCG_4729_Part_Dim1","Autonum",256)
+
+
+F.Intrinsic.Debug.Stop
+'F.Intrinsic.Debug.InvokeDebugger
+
+'F.Data.DataTable.SaveToDB("DTHdrSave","con","GCG_4954_BFAddress","Cust",256,"ID@!@ID*!*Cust@!@Cust")
+
+'*!*Name@!@Name*!*Address1@!@Address1*!*City@!@City*!*Zip@!@Zip*!*State@!@State
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ExportData_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ExportData.End
+
+Program.Sub.Get_Employee.Start
+F.Intrinsic.Control.SetErrorHandler("Get_Employee_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare 
+v.Local.sRet.Declare 
+v.Local.sUser.Declare 
+v.Local.sEmployeeNo.Declare
+
+
+
+'F.Intrinsic.Debug.InvokeDebugger
+'
+'F.Intrinsic.Debug.Stop
+
+f.Intrinsic.Control.If(v.Args.EmployeeNo,<>,"")
+	v.Local.sEmployeeNo.Set(v.Args.EmployeeNo)
+f.Intrinsic.Control.Else
+	'EMPID
+	Function.Global.Security.GetEmpNoFromUser(v.Caller.User,v.Local.sEmployeeNo)
+f.Intrinsic.Control.EndIf 
+
+
+
+F.Intrinsic.String.Build("select Name,Date_Hire,comments_1,comments_2  from v_employee_mstr where employee = '{0}'",v.Local.sEmployeeNo,V.Local.sSQL)
+F.ODBC.Connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,True)	
+	gui.frmTestReport.dtpcalibrationdt.value(V.ODBC.con!rst.FieldValtrim!Date_Hire)
+
+	gui.frmTestReport.txtguageSN.Text(V.ODBC.con!rst.FieldValtrim!comments_1)                       
+ 	gui.frmTestReport.txtmakemodel.Text(V.ODBC.con!rst.FieldValtrim!comments_2)
+	gui.frmTestReport.lblEmployee.Caption(v.Local.sEmployeeNo)   
+	gui.frmTestReport.lblTesterName.Caption(V.ODBC.con!rst.FieldValtrim!Name)
+f.Intrinsic.Control.Else
+	f.Intrinsic.UI.Msgbox("Employee information not found, Cannot Save Test Report")        
+	gui.frmTestReport.cmdTestReportPrint.Visible(false)
+	gui.frmTestReport.cmdTestReportSave.Enabled(false)
+	gui.frmTestReport.lblEmployee.Caption("")         
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Get_Employee_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4954_BackFlowAddress.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Get_Employee.End
+
+Program.Sub.Create_Screenshot.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iWinPX.Declare
+V.Local.iWinPY.Declare
+V.Local.iWinDX.Declare
+V.Local.iWinDY.Declare
+V.Local.sScreenShot.Declare
+v.Local.ihwd.Declare
+V.Local.sFolder.Declare
+V.Local.sFileName.Declare
+v.local.bRet.Declare
+
+'Get window position and size of the calling program
+
+v.Local.ihwd.Set(v.Screen.frmTestReport.HWnd)
+
+F.Intrinsic.API.GetWindowPosition(v.Local.ihwd,V.Local.iWinPX,V.Local.iWinPY)
+F.Intrinsic.API.GetWindowDimensions(v.Local.ihwd,V.Local.iWinDX,V.Local.iWinDY)
+'Taking a screen shot of the form
+
+f.Intrinsic.String.Build("{0}\Custom\",v.Caller.GlobalDir,V.Local.sFolder)
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.String.Build("{0}\Custom\4954\",v.Caller.GlobalDir,V.Local.sFolder)
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+	    
+
+F.Intrinsic.String.Build("{0}-{1}.png",v.Global.sOrder,v.Global.sLine,V.Local.sFileName)
+F.Intrinsic.String.Build("{0}\{1}",V.Local.sFolder,V.Local.sFileName,V.Local.sFileName)
+V.Local.sScreenShot.Set(V.Local.sFileName)
+
+'Function.Intrinsic.API.SetAlwaysOnTop(v.caller.handle,true)
+F.Intrinsic.UI.ScreenshotHWnd(v.Local.ihwd,V.Local.sScreenShot)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Create_Screenshot.End
+
+Program.Sub.cmdScreenshot_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sFolder.Declare
+V.Local.sFileName.Declare
+V.Local.iWinPX.Declare
+V.Local.iWinPY.Declare
+V.Local.iWinDX.Declare
+V.Local.iWinDY.Declare
+V.Local.sScreenShot.Declare
+v.Local.ihwd.Declare
+V.Local.bRet.Declare
+
+
+
+
+v.Local.ihwd.Set(v.Screen.frmMaint.HWnd)
+
+F.Intrinsic.API.GetWindowPosition(v.Local.ihwd,V.Local.iWinPX,V.Local.iWinPY)
+F.Intrinsic.API.GetWindowDimensions(v.Local.ihwd,V.Local.iWinDX,V.Local.iWinDY)
+
+F.Intrinsic.Math.Mult(V.Local.iWinDX,V.Ambient.TwipsPerPixelX,V.Local.iWinDX)
+F.Intrinsic.Math.Mult(V.Local.iWinDY,V.Ambient.TwipsPerPixelY,V.Local.iWinDY)
+'Placing screen shot onto borderless form with picture box
+
+
+f.Intrinsic.String.Build("{0}\Custom\4954\",v.Caller.GlobalDir,V.Local.sFolder)
+F.Intrinsic.String.Build("{0}-{1}.png",v.Global.sOrder,v.Global.sLine,V.Local.sFileName)
+F.Intrinsic.String.Build("{0}\{1}",V.Local.sFolder,V.Local.sFileName,V.Local.sFileName)
+
+f.Intrinsic.File.Exists(V.Local.sFileName,V.Local.bRet)
+f.Intrinsic.Control.If(V.Local.bRet)
+	Gui.frmMaint.pic1.Picture(V.Local.sFileName)
+	'Size screen shot form and picture box to fill form
+	Gui.frmMaint..Size(V.Local.iWinDX,V.Local.iWinDY)
+	Gui.frmMaint.pic1.Position(0,0)
+	Gui.frmMaint.pic1.BorderStyle(0)
+	Gui.frmMaint.pic1.Size(V.Local.iWinDX,V.Local.iWinDY)
+	gui.frmMaint.pic1.Visible(true)
+	v.Global.bScrShotV.Set(True)
+	Gui.frmMaint..Show
+f.Intrinsic.Control.Else
+	f.Intrinsic.UI.Msgbox("Screenshot file not found")
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdScreenshot_Click.End
+
+Program.Sub.Comments.Start
+${$0$}$GUI Script Maintenance$}$RAN$}$2/26/2018 4:34:11 PM$}$False
+Program.Sub.Comments.End
