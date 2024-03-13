@@ -1,0 +1,17 @@
+CREATE TABLE "GCG_4954_BFAddress"(
+ "Cust" CHAR(6) NOT NULL ,
+ "Name" VARCHAR(50),
+ "Address1" VARCHAR(50),
+ "Address2" VARCHAR(30),
+ "City" VARCHAR(20),
+ "Zip" VARCHAR(20),
+ "State" VARCHAR(3),
+ "Country" VARCHAR(12),
+ "Main_Tel" VARCHAR(13),
+ "Contact_Name" VARCHAR(50),
+ "Contact_Title" VARCHAR(30),
+ "Contact_Tel" VARCHAR(13),
+ "Comments" LONGVARCHAR,
+ "Contact_Email" VARCHAR(50),
+ "ID" TINYINT NOT NULL ,
+ PRIMARY KEY ("Cust", "ID"));
